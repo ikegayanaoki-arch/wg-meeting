@@ -180,6 +180,12 @@ h2 {
   z-index: 1;
 }
 
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* For smoother scrolling on iOS */
+}
+
 ol,
 ul {
   padding-left: 1.2rem;
