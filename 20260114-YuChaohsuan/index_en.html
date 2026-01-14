@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Summary: SiGAN: A 3D sensor importance deep generative model for urban wind flow field monitoring</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">Japanese</a>
+      <a href="index_en.html" class="current">English</a>
+      <a href="index_ch.html">中文</a>
+    </nav>
+
+    <main class="container" style="margin-top: 40px;">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2 style="font-size: clamp(1.5rem, 2.8vw, 2rem);">
+         SiGAN: A 3D sensor importance deep generative model for urban wind flow field monitoring
+          </h2>
+        </div>
+        <div class="card-body">
+
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong>
+              Huanxiang Gao, Gang Hu, Dongqin Zhang, Wenjun Jiang, K.T. Tse, Bernd R. Noack
+            </p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong>
+              Harbin Institute of Technology, The Hong Kong University of Science and Technology
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1016/j.buildenv.2024.111787" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.buildenv.2024.111787</a><br>
+            <strong>Journal:</strong> <em> Building and Environment, 262</em>, 111787, 2024
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>Abstract:</strong>
+               This study proposes a novel deep learning model, Sensor Importance Generative Adversarial Network (SiGAN), to solve the optimal sensor placement problem for monitoring urban wind fields. Evaluation using Computational Fluid Dynamics (CFD) data demonstrates that SiGAN effectively captures wind field characteristics at various heights and enables sensor arrangement from a global perspective. This method reduces the wind field reconstruction error by approximately 10% compared to other schemes, establishing a solid foundation for 3D urban wind environment monitoring.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>Research Highlights</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Optimal sensor placement is crucial for accurately monitoring complex 3D urban wind environments, but cost and physical constraints pose challenges.</li>
+            <li>This research proposes a deep learning model, "SiGAN (Sensor Importance Generative Adversarial Network)," to solve the optimal sensor placement problem in 3D urban spaces.</li>
+            <li>The proposed method identifies the importance of each sensor location by reconstructing the entire wind speed field based on wind speed data from around urban buildings.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>Key Findings</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>The proposed SiGAN method generated a more rational sensor importance distribution compared to unsupervised attention maps, showing high performance, especially in dense urban areas.</li>
+            <li>Compared to random placement and other methods (mrDMD), the sensor cluster selected by SiGAN significantly reduced the wind field reconstruction error (RMSE and MAPE) with fewer sensors, achieving high cost-effectiveness.</li>
+            <li>SiGAN was confirmed to have the ability to adapt to different wind field characteristics at various heights (both similar and significantly different) and propose optimized sensor placements for each.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>Conclusion</h2>
+        </div>
+        <div class="card-body">
+          <p>This study proposed SiGAN, an optimal sensor placement method for 3D urban wind fields. Based on deep learning, it overcomes the nonlinearity and computational cost issues of conventional methods. Experiments demonstrated that this method reduces wind reconstruction error by about 10% and has excellent cost-effectiveness and practicality.</p>
+          <ul>
+            <li>This study proposed SiGAN as the first sensor placement optimization method for three-dimensional urban wind fields that considers obstacles.</li>
+            <li>Being based solely on deep learning, SiGAN is user-friendly, requiring no prior assumptions or complex formula derivations.</li>
+            <li>Experimental results showed that the proposed method is highly effective, reducing wind field reconstruction error by approximately 10% compared to existing random selection, mrDMD, and unsupervised AG methods.</li>
+          </ul>
+        </div>
+      </section>
+      <section id="meeting-summary" class="card">
+  <div class="card-header">
+    <h2>Meeting Summary</h2>
+  </div>
+   <p style="font-size: 0.9rem; margin-bottom: 20px;">
+    <strong>Date:</strong> 2025, January, 14th 13:00 - 14:30 <br>
+    <strong>Reporter:</strong> Yu Chaohsuan
+   </p>
+   <img src="image.png" width="100%">  
+  <div class="card-body">
+    <p>This meeting discussed the research findings on a new deep learning model, <strong>"SAIGON (SA-GAN)"</strong>, which identifies the optimal sensor placement for observing complex wind conditions in urban areas. The main points are as follows:</p>
+    
+    <h3>1. Research Background and Objectives</h3>
+    <ul>
+      <li><strong>Complexity of Urban Wind Fields:</strong> Urban wind fields are three-dimensional and extremely complex due to obstacles such as buildings. Accurate understanding is necessary for safe drone operations and pollutant dispersion analysis, but sensors cannot be placed everywhere due to cost and physical constraints.</li>
+      <li><strong>Physical Constraints:</strong> This study aims to accurately reconstruct the entire wind field under the condition that sensor installation is restricted to <strong>within a 4m radius of buildings</strong> (sidewalks and green belts) to avoid obstructing traffic.</li>
+      <li><strong>Observation Heights:</strong> The focus is on three heights: 2m above ground (H1), 6m near low-rise rooftops (H2), and 14m above obstacles (H3).</li>
+    </ul>
+
+    <h3>2. Features of the Proposed "SAIGON (SA-GAN)" Method</h3>
+    <ul>
+      <li><strong>Handling Non-linearity:</strong> Conventional methods like POD and MRDMD rely on linear assumptions and have the drawback of overlooking spatial distribution characteristics by compressing 3D data into one dimension.</li>
+      <li><strong>Attention Mechanism:</strong> SAIGON simultaneously reconstructs the wind field and generates an <strong>"attention map"</strong> that indicates where sensors should be placed.</li>
+      <li><strong>Physical Consistency:</strong> The introduction of a <strong>discriminator</strong> forces the generation of physically meaningful maps, such as not assigning high importance inside buildings where wind does not flow.</li>
+    </ul>
+
+    <h3>3. Experimental Results and Achievements</h3>
+    <ul>
+      <li><strong>Improved Accuracy:</strong> It succeeded in <strong>reducing wind field reconstruction error by about 10%</strong> compared to existing methods.</li>
+      <li><strong>Optimal Number of Sensors:</strong> The analysis showed that <strong>70 sensors</strong> represent the "elbow point" for the best balance between cost and accuracy.</li>
+      <li><strong>Placement Validity:</strong> SAIGON was confirmed to place sensors in a balanced manner across the entire area and to adapt to wind changes at different heights.</li>
+    </ul>
+
+    <h3>4. Discussed Issues and Future Prospects</h3>
+    <ul>
+      <li><strong>Accuracy Differences by Height:</strong> It was pointed out that at a height of 14m (H3), prediction tends to be more difficult than in lower layers because the available installation locations (near tall buildings) are extremely limited.</li>
+      <li><strong>Model Generalization:</strong> Currently, the model has only been validated with a single wind direction (northwest). Future work will consider adapting to multiple wind directions and secondary optimization using random forests.</li>
+      <li><strong>Practical Operation:</strong> The envisioned operation involves fixing the model trained with CFD (Computational Fluid Dynamics) and, in the actual field, instantly reconstructing the entire area from the data of 70 optimally placed sensors.</li>
+    </ul>
+  </div>
+</section>
+
+      <section id="discussion-transcript" class="card">
+  <div class="card-header">
+    <h2>Discussion Transcript</h2>
+  </div>
+  <div class="card-body">
+    <p>Below is the English translation of the full conference transcript based on the source. It is created in a dialogue format with approximate elapsed times to follow the natural flow of the discussion.</p>
+    <hr>
+    
+    <h4>[00:00 - 05:00 approx: Background and Objectives]</h4>
+    <p><strong>Presenter:</strong> In this study, we investigated the <strong>optimal sensor placement</strong> in complex urban environments. The authors used an AIG model based in Niigata City. As seen in Figure 2A, this model represents a typical dense urban area with a mix of low-rise houses and high-rise buildings. To effectively capture the wind characteristics in various shapes, we focused on three specific heights: 2m above ground (H1), 6m near low-rise rooftops (H2), and 14m above obstacles (H3). At H1 and H2, we can analyze complex flows near the ground and low-rise rooftops, and at H3, we can capture the wind field above obstacles. The core problem here is that urban wind fields are inherently three-dimensional and extremely complex due to obstacles. Accurate monitoring is essential for safe drone operations and pollutant dispersion analysis, but sensors cannot be placed everywhere due to cost and physical constraints. Therefore, the main objective is to accurately reconstruct the entire 3D wind field from a limited sparse set of sensors. As shown in Figure 5, the input data consists of very sparse observation points around buildings. An important constraint is that sensors are limited to within a 4m radius of buildings. This corresponds to sidewalks and green belts, a consideration to avoid obstructing urban traffic.</p>
+    <p><strong>Questioner:</strong> Let me confirm about the input. Is the input the "position" of the sensor?</p>
+    <p><strong>Presenter:</strong> No, it refers to the "data" within a 4m radius of the building.</p>
+    <p><strong>Questioner:</strong> So, you are assuming that you can install sensors around buildings and collect data?</p>
+    <p><strong>Presenter:</strong> That's right. That's why we collect data near buildings.</p>
+    
+    <h4>[05:00 - 15:00 approx: Limitations of Conventional Methods and Proposed Model]</h4>
+    <p><strong>Presenter:</strong> Existing technologies such as POD (Proper Orthogonal Decomposition) and MRDMD (Multi-resolution Dynamic Mode Decomposition) primarily rely on linear assumptions. However, urban wind fields are nonlinear. A fundamental limitation of conventional methods is that they compress 3D spatial data into a 1D column for analysis, thereby overlooking the characteristics of spatial distribution. As a result, sensors are densely concentrated at the edges of the area, creating large blind spots in the center and leading to poor reconstruction accuracy. To solve this, the authors proposed <strong>SAIGON (or SA-GAN)</strong>. This model is unique in that it simultaneously handles two tasks: predicting the entire wind speed and generating an <strong>attention map</strong> that indicates where sensors should be placed.</p>
+    <p><strong>Questioner:</strong> I see. So the input data is the <strong>instantaneous wind speed distribution</strong>?</p>
+    <p><strong>Presenter:</strong> Yes, since we are conducting LES (Large Eddy Simulation) simulations, the input is instantaneous values. Before training the model, we created ground truth data using LES. In the simulation, we adopted a northwest wind direction and performed it for 30 seconds. The first 1 second was discarded for stabilization, and data was sampled at 0.1-second intervals to obtain a total of 290 time steps. </p>
+    <p><strong>Questioner:</strong> Is the comparison with the wind tunnel experiment in Figure 4 for this SA model?</p>
+    <p><strong>Presenter:</strong> No, this is a simple verification of the LES dataset itself. The red line is LES, and the black line is experimental data, showing a very consistent trend at 80 observation points.</p>
+    <p><strong>Questioner:</strong> But this is an average value, isn't it? They want to predict instantaneous values. Usually, average values are verified, but fluctuations are often not.</p>
+    <p><strong>Presenter:</strong> At least, the average distribution of their simulation can be said to be acceptable.</p>
+    
+    <h4>[15:00 - 25:00 approx: Attention Mechanism and Structure]</h4>
+    <p><strong>Presenter:</strong> The core of this method is the <strong>attention mechanism</strong>. First, it calculates the relationship between every pair of spatial points in the wind field. This shows how much one point depends on another. Then, these values are normalized into probability weights called "beta". This is the <strong>attention map</strong>. Physically, a higher value means higher importance as a sensor at that location.</p>
+    <p><strong>Questioner:</strong> What is the network structure?</p>
+    <p><strong>Presenter:</strong> The generator adopts an <strong>encoder-decoder structure</strong>. The final layer of the decoder simultaneously generates sensor importance matrices for all three heights. This allows it to capture 3D spatial correlations rather than treating each height individually. The feature extractor uses the first 18 layers of a pre-trained <strong>VGG19 network</strong>.</p>
+    <p><strong>Questioner:</strong> What about the discriminator?</p>
+    <p><strong>Presenter:</strong> The discriminator functions to ensure that the attention map makes physical sense. For example, it enforces consistency by not placing high importance inside solid buildings where wind cannot flow.</p>
+    
+    <h4>[25:00 - 35:00 approx: Experimental Results and Placement Strategy]</h4>
+    <p><strong>Presenter:</strong> Looking at the results in Figure 12, the <strong>SA-GAN curve (green)</strong> reduces errors faster than random placement (blue) and MRDMD (red). This indicates that it effectively minimizes redundant information. There is a clear elbow point around <strong>70 sensors</strong>, which represents the optimal balance between cost and accuracy.</p>
+    <p><strong>Questioner:</strong> Can you summarize the four conditions (Random, MRDMD, AG, SA-GAN)?</p>
+    <p><strong>Presenter:</strong> In all four methods, sensors are placed only within 4m of buildings. Random is random selection, AG is a model without a discriminator, and MRDMD is an optimization based on linear data assumptions.</p>
+    <p><strong>Questioner:</strong> Looking at the spatial arrangement in Figure 13, MRDMD shows dense concentration at the edges and blind spots in the center, doesn't it?</p>
+    <p><strong>Presenter:</strong> That's right. In contrast, the proposed method, <strong>SAIGON</strong>, shows a balanced distribution and adapts to wind changes at different heights.</p>
+    
+    <h4>[35:00 - End: Q&A and Future Challenges]</h4>
+    <p><strong>Questioner:</strong> What are the units of error on the vertical axis? Is it meters per second (m/s)?</p>
+    <p><strong>Presenter:</strong> It is not explicitly stated, but since it calculates the difference in wind speed, it is likely in <strong>meters per second (m/s)</strong>.</p>
+    <p><strong>Questioner:</strong> Why is the error at height H3 larger than at H1 or H2? H3 should have fewer buildings and simpler flow.</p>
+    <p><strong>Presenter:</strong> The flow may be simpler, but because there are few tall buildings that reach H3, the available installation locations are extremely limited. It is difficult to predict the entire area with few sensors.</p>
+    <p><strong>Questioner:</strong> How would this be used in a real-world setting?</p>
+    <p><strong>Presenter:</strong> First, the model would be trained with CFD and then fixed (frozen). In a real environment, sensors would be installed at 70 optimized locations, and the entire area would be instantly reconstructed from that data.</p>
+    <p><strong>Questioner:</strong> Doesn't the limitation of one wind direction and a short 30-second data duration lack reliability?</p>
+    <p><strong>Presenter:</strong> The authors acknowledge this and plan to address <strong>multiple wind directions</strong> and secondary optimization using random forests in the future.</p>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer">
+      <p>Last updated: 2026-01-14</p>
+    </footer>
+
+  </body>
+</html>
