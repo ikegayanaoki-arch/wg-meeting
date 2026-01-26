@@ -32,6 +32,13 @@
           </thead>
           <tbody>
             <tr>
+              <td><a href="20260121-WangWei/html/index_en.html">January 21, 2026</a></td>
+              <td>WangWei</td>
+              <td>History of the peak three-second gust</td>
+              <td>Franklin T. Lombardo</td>
+              <td>Journal of Wind Engineering & Industrial Aerodynamics, Volume, 208, Pages 104447, 2021</td>
+            </tr>
+            <tr>
               <td><a href="20260114-YuChaohsuan/index_en.html">January 14, 2026</a></td>
               <td>Yu Chaohsuan</td>
               <td>SiGAN: A 3D sensor importance deep generative model for urban wind flow field monitoring</td>
@@ -44,8 +51,13 @@
     </section>
 
     <footer class="footer">
-      
+      <p>Last Updated: <span id="last-updated"></span></p>
     </footer>
+
+
+    <script>
+        document.getElementById('last-updated').textContent = new Date().toLocaleString('en-US');
+    </script>
 
   </body>
 </html>

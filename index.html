@@ -24,7 +24,7 @@
           <table class="references-table">
             <thead>
               <tr>
-                <th class="col-date">日付</th>
+                <th class="col-date">報告日</th>
                 <th class="col-reporter">報告者</th>
                 <th class="col-title">論文タイトル</th>
                 <th class="col-authors">著者</th>
@@ -33,7 +33,14 @@
             </thead>
             <tbody>
               <tr>
-                <td><a href="20260114-YuChaohsuan/index.html">2026年01月14日</a></td>
+                <td><a href="20260121-WangWei/html/index.html">2026.01.21</a></td>
+                <td>WangWei</td>
+                <td>History of the peak three-second gust</td>
+                <td>Franklin T. Lombardo</td>
+                <td>Journal of Wind Engineering & Industrial Aerodynamics, Volume, 208, Pages 104447, 2021</td>
+              </tr>
+              <tr>
+                <td><a href="20260114-YuChaohsuan/index.html">2026.01.14</a></td>
                 <td>Yu Chaohsuan</td>
                 <td>SiGAN: A 3D sensor importance deep generative model for urban wind flow field monitoring</td>
                 <td>Huanxiang Gao, Gang Hu, Dongqin Zhang, Wenjun Jiang, K.T. Tse, Bernd R. Noack</td>
@@ -46,8 +53,13 @@
     </section>
 
     <footer class="footer">
-      
+      <p>最終更新日時: <span id="last-updated"></span></p>
     </footer>
+
+
+    <script>
+        document.getElementById('last-updated').textContent = new Date().toLocaleString('ja-JP');
+    </script>
 
   </body>
 </html>
