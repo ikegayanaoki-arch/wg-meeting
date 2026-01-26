@@ -277,6 +277,11 @@ pre code {
 .references-table .col-date {
   white-space: nowrap;
   min-width: 150px;
+  text-align: center;
+}
+
+.references-table tbody td:first-child {
+  text-align: center;
 }
 
 .references-table .col-reporter {

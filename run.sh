@@ -47,3 +47,8 @@
  
  echo "  ***  Finished updating index.html  ***  "
  rm -rf htmlTmp.md
+
+ ##git part: mannual for the time being
+ # git add . 
+ # git commit -m "date of meeting"
+ # git push
