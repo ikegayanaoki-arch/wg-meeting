@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>论文摘要：利用人工神经网络探索湍流模型</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">日本語</a>
+      <a href="index_en.html">English</a>
+      <a href="index_ch.html" class="current">中文</a>
+    </nav>
+    <main class="container" style="margin-top: 40px;">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2 style="font-size: clamp(1.5rem, 2.8vw, 2rem);">
+            利用人工神经网络探索湍流模型
+	      </h2>
+        </div>
+        <div class="card-body">
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>作者:</strong> 
+              Masataka Gamahara, Yuji Hattori
+            </p>
+            <p style="margin: 5px 0 0;"><strong>所属机构:</strong> 
+              日本东北大学信息科学研究生院（仙台 980-8579）及东北大学流体科学研究所（仙台 980-8577）
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.2.054604" target="_blank" rel="noopener noreferrer">10.1103/PhysRevFluids.2.054604</a><br>
+            <strong>期刊:</strong> <em>PHYSICAL REVIEW FLUIDS, Volume 2</em>, Pages 054604-1 - 054604-20, 2017
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>摘要:</strong>
+              本文测试了一种人工神经网络（ANN），作为一种寻找大涡模拟中亚格子尺度（SGS）应力新模型的工具。利用人工神经网络在不假设任何函数形式的情况下，建立了网格尺度流场与亚格子尺度应力之间的函数关系。训练和测试人工神经网络所需的数据由湍流槽道流的直接数值模拟提供。结果表明，人工神经网络可以建立一个类似于梯度模型的模型。真实SGS应力与人工神经网络输出之间的相关系数与相似性模型相当或更高，但小于双参数动态混合模型。此外，还使用训练后的人工神经网络进行了大涡模拟。尽管人工神经网络模型相对于Smagorinsky模型没有显示出优势，但结果证实，人工神经网络是建立新的、有待进一步改进的亚格子模型的有前途的工具。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>研究要点</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>提出使用人工神经网络（ANN）作为建立新的湍流大涡模拟（LES）亚格子尺度（SGS）模型的工具。</li>
+            <li>利用湍流槽道流的直接数值模拟（DNS）数据对ANN进行训练和测试，以寻找网格尺度流场与SGS应力之间的函数关系。</li>
+            <li>将基于ANN的模型性能与Smagorinsky模型和梯度模型等现有模型进行比较。</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>主要发现</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>ANN能够创建一个类似于梯度模型的模型，其预测的SGS应力与实际SGS应力之间具有较高的相关系数。</li>
+            <li>基于ANN的模型的相关系数与相似性模型相当或更高，但小于双参数动态混合模型。</li>
+            <li>而后验测试表明，尽管ANN模型在预测平均流方面没有比Smagorinsky模型有显著优势，但它证明了ANN是开发新湍流模型的一种有前途的方法。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>结论</h2>
+        </div>
+        <div class="card-body">
+          <p>本研究旨在验证人工神经网络（ANN）在开发大涡模拟（LES）中新的亚格子尺度（SGS）模型方面的有效性。使用湍流槽道流的直接数值模拟（DNS）数据作为训练数据，结果表明ANN能够构建一个与梯度模型相似的SGS应力模型。虽然ANN模型显示出与现有模型相当或更高的相关性，但并未发现显著优势。然而，本研究证实了ANN是构建新湍流模型的有前途的工具。</p>
+          <ul>
+            <li>ANN可以成功建立LES中网格尺度流场与亚格子尺度（SGS）应力张量之间的函数关系。</li>
+            <li>由ANN创建的模型被发现与梯度模型相似，并与DNS数据显示出良好的相关性，但在后验测试中，与传统的Smagorinsky模型相比没有提供显著优势。</li>
+            <li>研究结论认为，使用ANN是发现新的和改进的湍流模型的一种有前途的方法，但仍需进一步改进。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="summary" class="card">
+        <div class="card-header">
+          <h2>会议要点</h2>
+        </div>
+        <div class="card-body">
+            <img src="image.png" alt="会议相关图片" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
+            <p>本次会议的主要内容是关于2017年发表的一项研究报告的问答环节，该研究**利用人工神经网络（ANN）构建大涡模拟（LES）中的亚格子尺度（SGS）模型**。</p>
+            <p>会议要点如下：</p>
+            <h3>1. 研究背景与目的</h3>
+            <ul>
+                <li>传统的SGS模型（如Smagorinsky模型）存在一些问题，例如无法表示能量反向散射（backscatter）或数值上不稳定。</li>
+                <li>因此，本研究的目的是让ANN直接从直接数值模拟（DNS）数据中学习，从而在不预设模型形式的情况下，建立“网格解析流”与“SGS应力”之间的函数关系。</li>
+            </ul>
+            <h3>2. 方法与模型构建</h3>
+            <ul>
+                <li>**数据生成：** 生成湍流槽道流的DNS数据，并通过滤波处理创建输入（粗网格的解析尺度分量）和教师数据（SGS应力）。</li>
+                <li>**ANN结构：** 使用标准的前馈神经网络，并通过反向传播算法进行训练。</li>
+                <li>**输入变量选择：** 测试了速度梯度张量、涡量和距壁面距离（$y$）等变量的组合。</li>
+            </ul>
+            <h3>3. 主要分析结果（先验测试）</h3>
+            <ul>
+                <li>当训练中包含**速度梯度信息**时，获得了最高的相关性（相关系数超过0.7）。</li>
+                <li>距壁面距离（$y$）本身并不是一个主导因素。</li>
+                <li>结果表明，ANN模型不仅能很好地再现平均值，还能很好地再现**SGS应力的空间分布和结构**。</li>
+                <li>另一方面，也揭示了一个局限性：**随着滤波尺寸的增大（壁面单位超过20），预测精度会迅速下降**。</li>
+            </ul>
+            <h3>4. 与现有模型的比较与讨论</h3>
+            <ul>
+                <li>**与梯度模型的相似性：** 分析发现，训练后的ANN表现出与物理上的“梯度型模型”非常相似的行为。</li>
+                <li>**与Smagorinsky模型的对比：** Smagorinsky模型与DNS的SGS应力相关性非常低（约0.2），但在实际的LES计算（后验测试）中却能很好地预测平均流速剖面。</li>
+                <li>**LES应用结果：** 将ANN模型整合到实际的LES中后，虽然得到了合理的结果，但**并未显示出明显优于Smagorinsky模型的性能提升**。</li>
+            </ul>
+            <h3>5. 讨论与未来展望</h3>
+            <ul>
+                <li>ANN在非常靠近壁面的区域（粘性子层和缓冲层）表现最差，相关性较低。</li>
+                <li>未来的挑战包括强制张量对称性、使用多种滤波尺寸进行训练、探索更深层次的网络以及设置与能量耗散直接相关的训练目标。</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>讨论记录</h2>
+        </div>
+        <div class="card-body">
+            <dl>
+                <dt><strong>00:00 报告人:</strong></dt>
+                <dd>在LES（大涡模拟）中，我们使用滤波操作将流场分为“网格解析尺度”和“亚格子尺度（SGS）”。未解析运动的影响在LES方程中以SGS应力张量的形式出现，如何对该项进行建模是一个重大挑战。对于常见的模型，Smagorinsky模型耗散性太强，无法表示反向散射；而相似性模型则往往反向散射过度，容易变得不稳定。因此，本研究测试了是否可以使用神经网络（ANN）直接从数据中学习流场信息与SGS应力之间的关系，而无需预设模型形式。</dd>
+                <dt><strong>02:30 教授:</strong></dt>
+                <dd>不好意思打断一下，您能解释一下“反向散射”和“耗散性”的含义吗？</dd>
+                <dt><strong>报告人:</strong></dt>
+                <dd>好的，反向散射通常指能量从大尺度向小尺度流动过程中，局部地从小编涡向大尺度反向传递的现象。Smagorinsky模型无法表示这一点。</dd>
+                <dt><strong>教授:</strong></dt>
+                <dd>没错。耗散是指大涡分解成小涡，最终转化为分子运动的内能的过程，这被称为能量级串。反向散射则相反，是小涡合并成大涡的运动。</dd>
+                <dt><strong>05:00 报告人:</strong></dt>
+                <dd>在方法上，我们首先生成槽道流的DNS（直接数值模拟）数据，并应用滤波器以创建粗网格的输入数据。相应的SGS应力作为教师数据（输出）来训练ANN。从图中的平均流速剖面可以看出，该DNS数据正确地再现了壁面附近的行为和对数律。</dd>
+                <dt><strong>08:00 教授:</strong></dt>
+                <dd>您理解这里 $Re_	au$（摩擦雷诺数）的定义和意义吗？</dd>
+                <dt><strong>报告人:</strong></dt>
+                <dd>这是基于摩擦速度的雷诺数。</dd>
+                <dt><strong>教授:</strong></dt>
+                <dd>是的，它通过壁面单位进行归一化，作为边界层厚度或深度的指标。根据 $y^+$ 的范围，可以分为粘性子层、缓冲层和外层。</dd>
+                <dt><strong>15:00 报告人:</strong></dt>
+                <dd>在构建ANN时，我们使用了标准的前馈网络，并使用反向传播算法进行训练。作为输入变量，我们测试了应变率、涡量、速度梯度张量和壁面距离（$y$）的组合。</dd>
+                <dt><strong>18:00 教授:</strong></dt>
+                <dd>补充一下关于反向传播，它是一种优化过程。它通过反向传播输出误差来更新权重和偏置，从而可以高效地计算多层网络中的大量参数。</dd>
+                <dt><strong>25:00 报告人:</strong></dt>
+                <dd>从分析结果（图4）可以看出，当输入包含速度梯度张量时，与DNS的相关系数（CC）超过0.7，获得了较高的精度。增加壁面距离（$y$）并没有显著提高精度，这表明速度梯度信息是主导因素。相比之下，使用Smagorinsky型输入的相关性非常低。</dd>
+                <dt><strong>30:00 教授:</strong></dt>
+                <dd>Smagorinsky模型与DNS SGS项的相关性只有约0.2。但这个模型的奇特之处在于，它在实际计算中仍然能够很好地预测平均流速。</dd>
+                <dt><strong>35:00 报告人:</strong></dt>
+                <dd>ANN也能很好地再现SGS应力的空间分布和统计量级（RMS）。此外，对于直接影响动量方程的SGS应力散度，也获得了良好的相关性。</dd>
+                <dt><strong>42:00 报告人:</strong></dt>
+                <dd>作为一个限制，我们发现当滤波尺寸增大（$\Delta^+ > 20$）且SGS波动变得更复杂时，相关性会迅速下降。此外，在非常靠近壁面的地方（粘性子层），相关性也较低。</dd>
+                <dt><strong>45:00 教授:</strong></dt>
+                <dd>非常靠近壁面处相关性较低，可能是因为那里是粘性子层，没有涡旋，SGS项本身的贡献趋近于零，因此从数学上计算相关性难以获得有意义的值。</dd>
+                <dt><strong>52:00 报告人:</strong></dt>
+                <dd>通过分析训练好的ANN，我们发现其行为非常接近物理上的“梯度模型”。这表明ANN近似地学习了速度梯度的物理规律。</dd>
+                <dt><strong>60:00 报告人:</strong></dt>
+                <dd>最后，当我们将它整合到实际的LES计算（后验测试）中时，虽然在平均流速剖面等方面得到了合理的结果，但并没有看到比Smagorinsky模型有明显性能提升。总之，ANN可以学习SGS应力的结构，但要超越现有模型还需要进一步的改进。</dd>
+                <dt><strong><h4>问答环节</h4></strong></dt>
+                <dt><strong>65:00 参与者1:</strong></dt>
+                <dd>为什么只有一个隐藏层？</dd>
+                <dt><strong>报告人:</strong></dt>
+                <dd>在这项2017年的研究中，我们认为简单的结构也足以提供足够的学习能力。</dd>
+                <dt><strong>68:00 参与者2:</strong></dt>
+                <dd>在 $Re_	au = 180$ 下训练的模型可以应用于更高的雷诺数吗？</dd>
+                <dt><strong>报告人:</strong></dt>
+                <dd>在作者的测试中，性能在一定程度上维持到 $Re_	au = 800$，但超过这个范围可能会变得困难。</dd>
+                <dt><strong>72:00 参与者3:</strong></dt>
+                <dd>在学习曲线中，为什么神经元数量越多，初始阶段的误差下降得越快？</dd>
+                <dt><strong>教授:</strong></dt>
+                <dd>初始值是随机的，但参数越多，优化的初始阶段梯度往往更陡峭，这可能使得误差看起来下降得更快。</dd>
+                <dt><strong>75:00 参与者4:</strong></dt>
+                <dd>在实际代码中，ANN是如何工作的？</dd>
+                <dt><strong>报告人:</strong></dt>
+                <dd>在每个步骤中，将网格解析的速度梯度输入到ANN中，得到的SGS应力再反馈到动量方程的计算中。</dd>
+            </dl>
+        </div>
+      </section>
+
+      <section id="comments" class="card">
+        <div class="card-header">
+          <h2>评论</h2>
+        </div>
+        <div class="card-body">
+            <p><strong>报告人: Tong TingZhou</strong></p>
+            <p>这篇论文描述了基于槽道流的DNS，使用ANN归纳估计亚格子尺度模型。ANN本身是一个非常早期的单层模型，只改变了神经元的数量，所以作为神经网络模型的价值不是很高。然而，这项工作的新颖之处在于它在2017年就展示了这些数据。训练数据来自在通道雷诺数约180至800下求解的DNS。尽管系统设置非常简单，但内容非常容易理解且具有新意。</p>
+            <p>今天的内容非常出色，组织良好，演示文稿非常易于理解。对材料的理解也很充分，我们进行了一次有意义的讨论。</p>
+            <div class="note">
+                <p style="margin: 0;"><strong>有趣之处</strong></p>
+                <ul>
+                    <li>用ANN对SGS应力进行建模的结果是，所有分量的估计相关系数约为0.8。</li>
+                    <li>相比之下，对于经典开发且仍被广泛使用的Smagorinsky模型，由模型估计的亚格子尺度应力项与通过直接过滤DNS估计的S.G.S应力项几乎不相关。然而，当使用Smagorinsky模型求解流场时，估计精度并不差。这表明即使在这种水平的LES中，亚格子尺度的影响也极小。</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>最后更新时间: 2026年2月3日</p>
+    </footer>
+
+  </body>
+</html>

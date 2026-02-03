@@ -49,6 +49,7 @@
  rm -rf htmlTmp.md
 
  ##git part: mannual for the time being
- # git add . 
- # git commit -m "date of meeting"
- # git push
+  git add . 
+  DATE=`date+%y%m%d `
+  git commit -m "Meeting recoded added @ "$DATE
+  git push

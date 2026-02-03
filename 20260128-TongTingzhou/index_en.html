@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paper Summary: Searching for turbulence models by artificial neural network</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">日本語</a>
+      <a href="index_en.html" class="current">English</a>
+      <a href="index_ch.html">中文</a>
+    </nav>
+    <main class="container" style="margin-top: 40px;">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2 style="font-size: clamp(1.5rem, 2.8vw, 2rem);">
+            Searching for turbulence models by artificial neural network
+	      </h2>
+        </div>
+        <div class="card-body">
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> 
+              Masataka Gamahara, Yuji Hattori
+            </p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              Graduate School of Information Sciences, Tohoku University, Sendai 980-8579, Japan and Institute of Fluid Science, Tohoku University, Sendai 980-8577, Japan
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.2.054604" target="_blank" rel="noopener noreferrer">10.1103/PhysRevFluids.2.054604</a><br>
+            <strong>Journal:</strong> <em>PHYSICAL REVIEW FLUIDS, Volume 2</em>, Pages 054604-1 - 054604-20, 2017
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>Abstract:</strong>
+              An artificial neural network (ANN) is tested as a tool for finding a new subgrid model of the subgrid-scale (SGS) stress in large-eddy simulation. An ANN is used to establish a functional relation between the grid-scale flow field and the SGS stress without any assumption of the form of function. Data required for training and test of the ANN are provided by direct numerical simulation of a turbulent channel flow. It is shown that an ANN can establish a model similar to the gradient model. The correlation coefficients between the real SGS stress and the output of the ANN are comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model. Large-eddy simulations using the trained ANN are also performed. Although ANN models show no advantage over the Smagorinsky model, the results confirm that the ANN is a promising tool for establishing a new subgrid model with further improvement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>Key Points of the Research</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>An artificial neural network (ANN) is proposed as a tool to establish a new subgrid-scale (SGS) model for large-eddy simulation (LES) of turbulence.</li>
+            <li>The ANN is trained and tested using data from direct numerical simulation (DNS) of turbulent channel flow to find a functional relationship between the grid-scale flow field and the SGS stress.</li>
+            <li>The performance of the ANN-based model is compared with existing models like the Smagorinsky model and the gradient model.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>Main Findings</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>The ANN is capable of creating a model similar to the gradient model, with high correlation coefficients between the predicted and actual SGS stress.</li>
+            <li>The ANN-based model shows correlation coefficients comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model.</li>
+            <li>While the a posteriori tests show that the ANN model has no significant advantage over the Smagorinsky model in predicting the mean flow, it demonstrates that ANNs are a promising approach for developing new turbulence models.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>Conclusion</h2>
+        </div>
+        <div class="card-body">
+          <p>In this study, the effectiveness of an artificial neural network (ANN) was verified for developing a new subgrid-scale (SGS) model in large-eddy simulation (LES). Using direct numerical simulation (DNS) data of turbulent channel flow as training data, it was shown that an ANN can construct an SGS stress model similar to the gradient model. The ANN model showed correlation comparable to or higher than existing models, but no significant advantages were found. However, it was confirmed that ANNs are a promising tool for constructing new turbulence models.</p>
+          <ul>
+            <li>An ANN can successfully establish a functional relationship between the grid-scale flow field and the subgrid-scale (SGS) stress tensor in LES.</li>
+            <li>The model created by the ANN is found to be similar to the gradient model and shows good correlation with DNS data, but does not offer a significant advantage over the conventional Smagorinsky model in a posteriori tests.</li>
+            <li>The study concludes that using ANNs is a promising methodology for discovering new and improved turbulence models, although further improvements are needed.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="summary" class="card">
+        <div class="card-header">
+          <h2>Summary of the Meeting</h2>
+        </div>
+        <div class="card-body">
+            <img src="image.png" alt="Related image from the meeting" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
+            <p>The main content of this meeting was a research presentation on the **construction of a subgrid-scale (SGS) model in LES (Large Eddy Simulation) using an artificial neural network (ANN)**, published in 2017, and the subsequent Q&A session.</p>
+            <p>The key points of the meeting are as follows:</p>
+            <h3>1. Background and Objectives</h3>
+            <ul>
+                <li>Conventional SGS models (like the Smagorinsky model) have issues, such as being unable to represent energy backscatter or being numerically unstable.</li>
+                <li>Therefore, the objective is to have an ANN learn the functional relationship between the "grid-resolved flow" and "SGS stress" directly from DNS (Direct Numerical Simulation) data, without assuming a model form.</li>
+            </ul>
+            <h3>2. Methodology and Model Construction</h3>
+            <ul>
+                <li>**Data Generation:** DNS data of turbulent channel flow was generated and filtered to create input (coarse-grid resolved scale components) and teacher data (SGS stress).</li>
+                <li>**ANN Structure:** A standard feedforward neural network was used and trained with the backpropagation algorithm.</li>
+                <li>**Input Variable Selection:** Combinations of the velocity gradient tensor, vorticity, and distance from the wall ($y$) were tested.</li>
+            </ul>
+            <h3>3. Main Analysis Results (A Priori Test)</h3>
+            <ul>
+                <li>The highest correlation (correlation coefficient over 0.7) was obtained when **velocity gradient information** was included in the training.</li>
+                <li>The distance from the wall ($y$) was not a dominant factor by itself.</li>
+                <li>It was shown that the ANN model can reproduce not only the mean values but also the **spatial distribution and structure of the SGS stress** well.</li>
+                <li>On the other hand, a limitation was revealed: **as the filter size increases (more than 20 in wall units), the prediction accuracy rapidly decreases**.</li>
+            </ul>
+            <h3>4. Comparison with Existing Models and Discussion</h3>
+            <ul>
+                <li>**Similarity to the Gradient Model:** The trained ANN was analyzed and found to exhibit behavior very similar to a physical "gradient-type model."</li>
+                <li>**Contrast with the Smagorinsky Model:** The Smagorinsky model has a very low correlation with the DNS SGS stress (about 0.2), yet it predicts the mean velocity profile well in actual LES calculations (a posteriori tests).</li>
+                <li>**LES Application Results:** When the ANN model was integrated into an actual LES, it produced reasonable results, but **did not show a clear performance improvement over the Smagorinsky model**.</li>
+            </ul>
+            <h3>5. Discussion and Future Outlook</h3>
+            <ul>
+                <li>The ANN performs worst very close to the wall (in the viscous sublayer and buffer layer), where the correlation is low.</li>
+                <li>Future challenges include enforcing tensor symmetry, training with multiple filter sizes, exploring deeper networks, and setting training targets directly related to energy dissipation.</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>Transcript of the Discussion</h2>
+        </div>
+        <div class="card-body">
+            <dl>
+                <dt><strong>00:00 Presenter:</strong></dt>
+                <dd>In LES (Large Eddy Simulation), we use a filtering operation to separate the flow into a "grid-resolved scale" and a "subgrid-scale (SGS)." The effect of the unresolved motion appears as the SGS stress tensor in the LES equations, and how to model this term is a major challenge. As for common models, the Smagorinsky model is too dissipative and cannot represent backscatter, while similarity models tend to have excessive backscatter and become unstable. In this study, we are testing whether a neural network (ANN) can directly learn the relationship between flow information and SGS stress from data, without assuming a model form.</dd>
+                <dt><strong>02:30 Professor:</strong></dt>
+                <dd>Excuse me for interrupting, but could you explain the meaning of "backscatter" and "dissipative"?</dd>
+                <dt><strong>Presenter:</strong></dt>
+                <dd>Yes, backscatter refers to the phenomenon where energy, which typically flows from large scales to small scales, is locally transferred back from small eddies to larger scales. The Smagorinsky model cannot represent this.</dd>
+                <dt><strong>Professor:</strong></dt>
+                <dd>That's correct. Dissipation is the process where large eddies break down into smaller eddies and eventually turn into internal energy, which is molecular motion. This is called the energy cascade. Backscatter is the opposite, where small eddies merge to form larger ones.</dd>
+                <dt><strong>05:00 Presenter:</strong></dt>
+                <dd>As for the method, we first generate DNS (Direct Numerical Simulation) data for channel flow and apply a filter to create the coarse-grid input data. The corresponding SGS stress is used as the teacher data (output) to train the ANN. From the mean velocity profile in the figure, we can confirm that this DNS data correctly reproduces the behavior near the wall and the log law.</dd>
+                <dt><strong>08:00 Professor:</strong></dt>
+                <dd>Do you understand the definition and meaning of $Re_	au$ (friction Reynolds number) here?</dd>
+                <dt><strong>Presenter:</strong></dt>
+                <dd>It's the Reynolds number based on the friction velocity.</dd>
+                <dt><strong>Professor:</strong></dt>
+                <dd>Correct. It is normalized by wall units and serves as an index for the thickness or depth of the boundary layer. The range of $y^+$ divides it into the viscous sublayer, buffer layer, and outer layer.</dd>
+                <dt><strong>15:00 Presenter:</strong></dt>
+                <dd>For the ANN construction, we used a standard feedforward network and trained it using backpropagation. As input variables, we are testing combinations of the strain rate, vorticity, velocity gradient tensor, and wall distance ($y$).</dd>
+                <dt><strong>18:00 Professor:</strong></dt>
+                <dd>To add a note on backpropagation, it's a type of optimization process. It's a method that updates weights and biases by propagating the output error backward, allowing for efficient calculation of the vast number of parameters in a multi-layer network.</dd>
+                <dt><strong>25:00 Presenter:</strong></dt>
+                <dd>Looking at the analysis results (Figure 4), when the velocity gradient tensor was included as an input, we obtained high accuracy with a correlation coefficient (CC) exceeding 0.7 with the DNS. Adding the wall distance ($y$) did not significantly improve accuracy, indicating that the velocity gradient information is dominant. On the other hand, the correlation was very low with the Smagorinsky-type input.</dd>
+                <dt><strong>30:00 Professor:</strong></dt>
+                <dd>The correlation between the Smagorinsky model and the DNS SGS term is only about 0.2. The strange thing about this model is that it can still predict the mean velocity well in actual calculations.</dd>
+                <dt><strong>35:00 Presenter:</strong></dt>
+                <dd>The ANN also reproduces the spatial distribution and statistical magnitude (RMS) of the SGS stress well. Furthermore, it obtains a good correlation for the divergence of the SGS stress, which directly affects the momentum equation.</dd>
+                <dt><strong>42:00 Presenter:</strong></dt>
+                <dd>As a limitation, we found that as the filter size increases ($\Delta^+ > 20$) and the SGS fluctuations become more complex, the correlation rapidly decreases. Also, the correlation is low very close to the wall (in the viscous sublayer).</dd>
+                <dt><strong>45:00 Professor:</strong></dt>
+                <dd>The low correlation very close to the wall is likely because that is the viscous sublayer where there are no eddies, and the contribution of the SGS term itself approaches zero, so calculating a correlation mathematically doesn't yield a meaningful value.</dd>
+                <dt><strong>52:00 Presenter:</strong></dt>
+                <dd>Upon analyzing the trained ANN, its behavior was found to be very close to the physical "gradient-type model." This suggests that the ANN has approximately learned the physical laws of velocity gradients.</dd>
+                <dt><strong>60:00 Presenter:</strong></dt>
+                <dd>Finally, when we incorporated it into an actual LES calculation (a posteriori test), we obtained reasonable results for the mean velocity profile, but we did not see a clear performance improvement over the Smagorinsky model. In conclusion, the ANN can learn the structure of SGS stress, but further improvements are needed to surpass existing models.</dd>
+                <dt><strong><h4>Q&A</h4></strong></dt>
+                <dt><strong>65:00 Participant 1:</strong></dt>
+                <dd>Why is there only one hidden layer?</dd>
+                <dt><strong>Presenter:</strong></dt>
+                <dd>In this 2017 study, it is thought that a simple structure provided sufficient learning capability.</dd>
+                <dt><strong>68:00 Participant 2:</strong></dt>
+                <dd>Can a model trained at $Re_	au = 180$ be applied to higher Reynolds numbers?</dd>
+                <dt><strong>Presenter:</strong></dt>
+                <dd>In the author's tests, performance is maintained to some extent up to $Re_	au = 800$, but it may become difficult beyond that.</dd>
+                <dt><strong>72:00 Participant 3:</strong></dt>
+                <dd>In the learning curve, why does the error drop sharply in the initial stage with more neurons?</dd>
+                <dt><strong>Professor:</strong></dt>
+                <dd>The initial values are random, but with more parameters, the gradient tends to be steeper in the initial stage of optimization, which can make the error appear to decrease faster.</dd>
+                <dt><strong>75:00 Participant 4:</strong></dt>
+                <dd>How does the ANN work in the actual code?</dd>
+                <dt><strong>Presenter:</strong></dt>
+                <dd>At each step, the grid-resolved velocity gradient is input into the ANN, and the resulting SGS stress is fed back into the calculation of the momentum equation.</dd>
+            </dl>
+        </div>
+      </section>
+
+      <section id="comments" class="card">
+        <div class="card-header">
+          <h2>Comments</h2>
+        </div>
+        <div class="card-body">
+            <p><strong>Reporter: Tong TingZhou</strong></p>
+            <p>This paper describes the inductive estimation of a subgrid-scale model using an ANN, based on DNS of channel flow. The ANN itself is a very early, single-layer model where only the number of neurons is changed, so its value as a neural network model is not very high. However, the novelty of this work lies in presenting this data in 2017. The training data was from DNS solved at channel Reynolds numbers from about 180 to 800. Although the system setting is very simple, the content was very easy to understand and novel.</p>
+            <p>Today's content was excellent, well-organized, and the presentation was very easy to follow. The understanding of the material was sufficient, and we were able to have a meaningful discussion.</p>
+            <div class="note">
+                <p style="margin: 0;"><strong>Interesting Points</strong></p>
+                <ul>
+                    <li>As a result of modeling the SGS stress with an ANN, all components were estimated with a correlation coefficient of about 0.8.</li>
+                    <li>In contrast, for the classically developed and still widely used Smagorinsky model, the subgrid-scale stress term estimated by the model hardly correlates with the S.G.S stress term estimated by directly filtering the DNS. However, when the flow field is solved with the Smagorinsky model, the estimation accuracy is not that bad. This suggests that the influence of the subgrid scale is extremely small even in this level of LES.</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Last Modified: February 3, 2026</p>
+    </footer>
+
+  </body>
+</html>
