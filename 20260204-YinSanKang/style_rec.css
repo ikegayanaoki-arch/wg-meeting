@@ -1,0 +1,42 @@
+
+.transcript {
+    font-family: var(--sans);
+    line-height: 1.8;
+}
+
+.transcript-entry {
+    margin-bottom: 1.5em;
+    padding-left: 70px;
+    position: relative;
+}
+
+.transcript-entry .time {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--muted);
+    font-family: var(--mono);
+}
+
+.transcript-entry .speaker {
+    font-weight: 700;
+    color: var(--accent-ink);
+    margin-bottom: 4px;
+    display: block;
+}
+
+.transcript-entry .dialog {
+    margin: 0;
+}
+
+.qa-title {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--accent-ink);
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-top: 1px solid var(--border);
+    padding-top: 1em;
+}
