@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>会議概要: Deep Learning‐Based Urban Canopy Model for Complex Building Morphologies</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html" class="current">日本語</a>
+      <a href="index_en.html">English</a>
+      <a href="index_ch.html">中文</a>
+    </nav>
+
+    <main class="container" style="margin-top: 40px;">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2 style="font-size: clamp(1.5rem, 2.8vw, 2rem);">
+            Deep Learning‐Based Urban Canopy Model for Complex Building Morphologies
+          </h2>
+        </div>
+        <div class="card-body">
+          <p style="font-size: 0.95em; color: var(--muted); margin-top: 5px; margin-bottom: 20px;">
+            複雑な建物形態のための深層学習ベースの都市キャノピーモデル
+          </p>
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> 
+              Xinjie Meng, Yongwei Wang, Yuanjian Yang, Qian Huang, Jianping Guo, Yaning Lv, and Zekai Dai
+            </p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              Nanjing University of Information Science and Technology; Chinese Academy of Meteorological Sciences
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1029/2025MS005483" target="_blank" rel="noopener noreferrer">10.1029/2025MS005483</a><br>
+            <strong>Journal:</strong> <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, Volume 18, Pages e2025MS005483, 2026
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>概要:</strong>
+              深層学習は気象モデリングに新たな手法を提供していますが、都市キャノピーモデルへの応用はまだ始まったばかりです。本研究では、複雑な建物形態に対応した深層学習ベースの都市キャノピーモデル「Urban Canopy Neural Network (UCNN)」を開発しました。物理モデルであるTEBを用いて多様な建物形態のデータを生成し、世界10カ所の都市フラックス・タワーの気象データで学習させました。独立した11カ所のサイトデータによる検証の結果、UCNNは従来の物理モデルと同等の精度を維持しつつ、計算速度を約5倍に向上させることができました。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>研究のポイント</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>複雑な建物形態に対応した深層学習ベースの都市キャノピーモデル（UCNN）を新たに開発。</li>
+            <li>世界中の多様な観測サイトからの独立したデータを用いて、モデルの汎用性を検証。</li>
+            <li>開発された深層学習モデルは、主要な物理ベースの都市キャノピーモデルと同等の精度を達成しつつ、計算速度は約5倍に向上。</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>主な発見</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>物理モデル（TEB）を用いて5,000通りの建物パラメータ組み合わせから1,440万個のデータを生成し、学習に使用。</li>
+            <li>放射（短波・長波）および熱フラックス（顕熱・潜熱）の予測において、従来の物理モデルと同等の高い精度を示した。</li>
+            <li>UCNNは物理モデルよりも約5倍高速に動作し、計算コストの大幅な削減が可能であることを実証。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>結論</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            本研究では、深層学習を用いた都市キャノピーモデルUCNNを開発し、その有効性を実証した。UCNNは、物理モデルであるTEBのシミュレーション結果を学習することで、多様な建物形態や気候条件における地表・大気間のエネルギー交換を正確かつ迅速に予測できる。独立した観測データによる検証の結果、UCNNは従来の主要な物理モデルに匹敵する精度を持ちながら、約5倍の計算速度を達成した。これにより、深層学習が複雑な都市形態における気象シミュレーションの効率化に大きく貢献できることが示された。
+          </p>
+        </div>
+      </section>
+
+      <section id="summary" class="card">
+        <div class="card-header">
+          <h2>会議の要点</h2>
+        </div>
+        <div class="card-body">
+          <img src="image.png" alt="会議資料" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+          <div style="white-space: pre-wrap;">この会議では、**複雑な建物形態における深層学習ベースの都市キャノピーモデル（UCNN: Urban Canopy Neural Network）**に関する研究発表と、それに対する質疑応答が行われました。
+
+### 1. 研究の背景と目的
+都市キャノピーモデル（UCM）は、地表と大気のエネルギー交換をシミュレートするために不可欠ですが、都市の複雑化に伴い、従来の物理モデルでは計算コストが高く、パラメータ設定も困難になっています。本研究では、物理モデルである**TEB（Town Energy Balance）**を用いて多様な建物形態のデータセットを生成し、これを学習させた深層学習ベースの代理モデル（UCNN）を構築することで、効率的で汎用性の高いシミュレーションを目指しています。
+
+### 2. 手法とデータセット
+*   **データ生成:** 21のフラックス・タワー（観測塔）サイトのうち10サイトをトレーニング用、11サイトを独立した検証用に使用しました。建物形態の5,000通りのランダムな組み合わせから、約4,040万個のトレーニングサンプルを生成しています。
+*   **モデル構造:** 空間的特徴の抽出に**多層パーセプトロン（MLP）**、時系列データの処理に**GRU（Gated Recurrent Unit）**を組み合わせた構造を採用しています。
+*   **入出力:** 入力は気象データと建物パラメータ（高さ、色など）、出力は放射（Radiation）と乱流（Turbulence/Heat flux）です。
+
+### 3. 会議での主な質疑応答と議論
+*   **専門用語の定義:** 会議内では、以下の用語について確認が行われました。
+    *   **フラックス・タワー:** 通常の気象観測塔とは異なり、熱フラックスや運動量フラックスを同時に測定できる設備です。
+    *   **放射の種類:** 太陽からの直接エネルギー（短波放射）と、周囲の物体から放出されるエネルギー（長波放射）の違い。
+    *   **熱の種類:** 直接的な温度変化を伴う「顕熱（Sensible Heat）」と、蒸発などの状態変化に使われる「潜熱（Latent Heat）」の区別。
+*   **精度の逆転現象に関する議論:** 「物理モデル（TEB）のデータで学習させたUCNNが、なぜ元のTEBよりも正確になり得るのか」という点が議論の焦点となりました。
+    *   **回答:** 損失関数（MSE）が極端な値を滑らかに（スムージング）することで、ノイズを排し、統計的な精度が向上している可能性があると説明されました。
+    *   **懸念:** ただし、このスムージング特性により、**台風のような極端な現象の予測には向かない**可能性も指摘されました。
+*   **季節と場所:** 冬のデータで放射量が高い点について、オーストラリアなどの**南半球**のサイトが含まれているためであると確認されました。
+
+### 4. 結論と今後の予定
+この研究により、深層学習モデルが物理モデルの代理として十分に機能し、高い計算効率（時間とコストの削減）を実現できることが示されました。
+次回の会議は、開始時間を早めて**12時30分**から行うことが合意されました。</div>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>議論のトランスクリプト</h2>
+        </div>
+        <div class="card-body">
+          <div class="transcript-container">
+            <div class="transcript-entry">
+              <span class="timestamp">00:00:01</span> <span class="speaker">発表者:</span> おはようございます。本日は、複雑な建物形態を対象とした、深層学習ベースの都市キャノピーモデルに関する論文について発表します。都市キャノピーモデル（UCM）は、地表と大気のエネルギー交換をシミュレートするために不可欠です。都市の複雑さが増すにつれ、物理モデルによる正確なシミュレーションは可能ですが、計算コストが高く、パラメータ設定も非常に困難になっています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:00:33</span> <span class="speaker">発表者:</span> また、都市フラックスの観測データは限られているため、データ駆動型のアプローチには制限があります。深層学習モデルは高い効率性を持っていますが、従来の多くのモデルは単一サイトのデータで学習されており、多様な都市形態を表現する能力に欠けています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:01:06</span> <span class="speaker">発表者:</span> そこで本研究では、深層学習ベースの都市キャノピー・ニューラルネットワーク（UCNN）を提案しました。物理モデルであるTEB（Town Energy Balance）を用いて、多様な形態を含む大規模なデータセットを生成し、汎用性が高く効率的な代理モデルを構築することを目的としています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:01:39</span> <span class="speaker">参加者:</span> 「UCNN」という略称は少し紛らわしいですね。Cは「Canopy（キャノピー）」のCですよね？<br>
+              <span class="speaker">発表者:</span> はい、キャノピーです。<br>
+              <span class="speaker">参加者:</span> CNN（畳み込みニューラルネットワーク）と混同しそうですが、キャノピーのことですね。<br>
+              <span class="speaker">発表者:</span> 手法についてですが、21か所のタワーサイトのうち10サイトをトレーニングサンプル作成用に抽出しました。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:02:22</span> <span class="speaker">発表者:</span> 残りの11サイトは、検証用の独立したサイトとして使用しています。建物形態については、変数範囲からランダムに選択された5,000通りの組み合わせを用意しました。表2には、表1から導き出されたTEB物理モデルに必要なパラメータが示されています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:03:06</span> <span class="speaker">発表者:</span> これらの組み合わせから4,040万個のトレーニングサンプルが生成されました。そのうち95%を学習・検証セットに、5%をテストセットとして使用しています。図1にその構造を示しています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:03:36</span> <span class="speaker">発表者:</span> 入出力については表3の通りです。入力は気象データと建物パラメータ、出力はTEBから派生したラベルデータです。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:04:10</span> <span class="speaker">参加者:</span> 入出力の変数で分からないところはありますか？物理的な意味、例えば湿度や気圧などは大丈夫そうですね。TEBというのはシミュレーションソフトのことですか？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:04:46</span> <span class="speaker">発表者:</span> はい、物理モデルです。<br>
+              <span class="speaker">参加者:</span> 実際のデータではなく、トレーニング用にデータを生成したということですね。どうやって？<br>
+              <span class="speaker">発表者:</span> 単層、あるいは汎用性を持たせるために多層のキャノピーモデルを使用しているようです。入力は建物の高さや幅、色などのパラメータで、出力は温度ですか？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:06:00</span> <span class="speaker">発表者:</span> 出力は放射と乱流（熱輸送）です。<br>
+              <span class="speaker">参加者:</span> 建物の情報はどのように形成されるのですか？<br>
+              <span class="speaker">発表者:</span> 表1の範囲からランダムに5,000通り組み合わせています。<br>
+              <span class="speaker">参加者:</span> ということは、幾何学的な条件は実在のものではなく、ランダムに選んだ組み合わせから地表熱フラックスを計算しているということですね？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:06:34</span> <span class="speaker">発表者:</span> 基本的な組み合わせは実際の都市に基づいていると思いますが、生成されたパラメータは表1の範囲から導出されています。<br>
+              <span class="speaker">参加者:</span> 変数の範囲はどう定義したのでしょう？<br>
+              <span class="speaker">発表者:</span> おそらく実際の状況に基づいているはずです。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:07:47</span> <span class="speaker">参加者:</span> 地図を確認しましたが、データは都市部からのもののようですね。おそらくフラックス・タワー（観測塔）に近い、実際の都市情報を選んでいるのでしょう。ところで、日本の「代々木」って知っていますか？<br>
+              <span class="speaker">発表者:</span> 代々木……すみません、分かりません。<br>
+              <span class="speaker">参加者:</span> 代々木公園ですよ。西新宿とか東工大とか。岡山キャンパスも近いかな？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:09:33</span> <span class="speaker">参加者:</span> このモデルは1次元のキャノピーモデルなので、水平方向の解像度はなく、垂直方向のみを表現しています。WAFシミュレーションの1メッシュ、あるいは100km四方の全球シミュレーションのようなイメージですね。萩島先生の博士論文も多層キャノピーモデルに関するものでしたね。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:10:24</span> <span class="speaker">発表者:</span> 本研究では評価指標としてMAE（平均絶対誤差）を使用しています。モデル構造は、空間的特徴の抽出に多層パーセプトロン（MLP）、時系列データの処理にGRU（Gated Recurrent Unit）を組み合わせています。図2に21のフラックス・タワーの位置を示しています。緑がトレーニング用、赤が検証用です。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:11:43</span> <span class="speaker">参加者:</span> これらのデータは誰でも利用できるのですか？<br>
+              <span class="speaker">発表者:</span> 参考文献にデータセットが記載されています。<br>
+              <span class="speaker">参加者:</span> ところで、「フラックス・タワー」の意味は分かりますか？<br>
+              <span class="speaker">発表者:</span> 観測塔ですよね。<br>
+              <span class="speaker">参加者:</span> 通常の気象観測所は風速や温度を測りますが、フラックス・タワーは熱フラックスと運動量フラックスを同時に測定できるのが大きな違いです。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:13:01</span> <span class="speaker">参加者:</span> データ提供者にはMatthias Rothや菅原先生も含まれているようですね。<br>
+              <span class="speaker">発表者:</span> 結果ですが、図3はUCNN対TEBの結果です。放射に関しては、散布図が1対1のライン上に集中しており、上向き短波放射のMAEはわずか2.05 W/m²でした。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:14:02</span> <span class="speaker">発表者:</span> 一方で、乱流フラックスの予測エラーは放射よりも大きく、クラウド（雲）状に分散しています。顕熱（QH）のMAEは13.27 W/m²です。放射フラックスの方がUCNNで捉えやすいことを示しています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:15:13</span> <span class="speaker">参加者:</span> 「顕熱（Sensible Heat）」と「潜熱（Latent Heat）」の意味は分かりますか？あと「短波（Short wave）」と「長波（Long wave）」の違いは？<br>
+              <span class="speaker">発表者:</span> 波数の違い……でしょうか？<br>
+              <span class="speaker">参加者:</span> 太陽からの直接的なエネルギー、高温の物体から来るのが短波放射です。それが地表に当たって温度が変わり、周囲の低温の物体から放射されるのが長波放射です。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:17:57</span> <span class="speaker">参加者:</span> 顕熱は直接的な温度変化を伴う熱移動、潜熱は水が蒸発して気体になるような状態変化に使われる熱のことです。<br>
+              <span class="speaker">発表者:</span> 乱流フラックスと入力データの間には複雑な非線形結合があるため、QHの誤差が大きくなっています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:19:06</span> <span class="speaker">発表者:</span> 図5は日変化を示しており、UCNNの結果はTEBと高い一致を示していますが、実測値（Observation）とは多少の乖離があります。午後の時間帯にUCNNがTEBよりも低い値を示す傾向があります。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:20:19</span> <span class="speaker">発表者:</span> 図6の精度比較では、多くのサイトが1対1のライン周辺に位置しており、UCNNが高い精度を持つことが分かります。ただし、図BとCではラインの右下に位置するサイトが多く、UCNNが結果を過小評価する可能性を示唆しています。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:22:01</span> <span class="speaker">発表者:</span> 夏と冬の比較（図7, 8）では、UCNNは夏に過小評価し、冬に過大評価する傾向があるようです。<br>
+              <span class="speaker">参加者:</span> 一つ確認ですが、この観測サイトはどこですか？冬なのに短波放射が夏より高いのが気になります。<br>
+              <span class="speaker">発表者:</span> 6月から7月のデータが冬として扱われています……あ、南半球ですね。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:24:05</span> <span class="speaker">参加者:</span> なるほど、オーストラリアなどですね。だから12月や1月の短波放射が強いわけだ。<br>
+              <span class="speaker">発表者:</span> 結論として、本モデルは既存の13の都市キャノピーモデルに匹敵する予測能力を持っており、深層学習が物理モデルの代理として実現可能であることを示しました。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:27:49</span> <span class="speaker">参加者:</span> 結論について質問です。TEBという物理モデルのデータを使って学習させているのに、なぜ「元のTEBよりも正確だ」と言えるのですか？学習元以上の精度が出るのは不思議です。<br>
+              <span class="speaker">発表者:</span> UCNNで使用しているMSE（平均二乗誤差）損失関数が、ピーク値を抑え、極端な値を回避するように作用しているためかもしれません。それによって、より「真値（Ground Truth）」に近くなっている可能性があります。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:31:16</span> <span class="speaker">参加者:</span> 機械学習のプロセスが、元のデータに含まれる「ノイズ」を判別して滑らかにしているということでしょうか。TEBを使う利点は、学習用のサンプル数を増やせることですね。<br>
+              <span class="speaker">発表者:</span> はい。また、機械学習モデルの利点は効率性です。計算コストと時間を大幅に削減できます。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:34:10</span> <span class="speaker">参加者:</span> 極端な条件を「スムージング（平滑化）」して精度を上げているということは、台風のような異常気象の予測には使えないということになりませんか？<br>
+              <span class="speaker">発表者:</span> その通りかもしれません。非常に稀な条件を切り捨てて平均的な精度を上げているのであれば、実用上の課題は残ります。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:37:59</span> <span class="speaker">参加者:</span> このモデルは場所（ロケーション）の違いは考慮せず、建物の幾何学的パラメータと気候条件だけで予測しているのですね。だからサイトごとの乖離が出るのでしょう。<br>
+              <span class="speaker">発表者:</span> はい、そのようです。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:40:19</span> <span class="speaker">参加者:</span> わかりました、ありがとうございます。では今日の会議はここまでにしましょう。<br>
+              <span class="speaker">参加者:</span> 来週は14時からですが、少し早めて12時30分開始でも大丈夫ですか？<br>
+              <span class="speaker">全員:</span> はい、12時30分で大丈夫です。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comments" class="card">
+        <div class="card-header">
+          <h2>コメント</h2>
+        </div>
+        <div class="card-body">
+          <div style="white-space: pre-wrap;">UCNN (Urban Canopy Neuralnetwork Model)を使って，1Dキャノピーモデルで算出している短波・長波放射量と表面潜熱・顕熱フラックスを推定するモデル
+報告者: Wan Mingxuan
+1次元キャノピーモデルの出力を機械学習を使って予測するモデルの提案についての論文でした。都市機構系ヒートアイランド系の論文で、ラックスタワーのデータをもとに、1次元キャノピー算出した波長、波の放射量と表面の潜熱・顕熱フラックスを推定するモデルについての報告でした．キャノピーモデルに比べて、学習モデルの予測制度が高いと言う結論が得られていて，入力データとして与えたキャンビーモデルよりも、高性能になると言う不思議な結果でした．
+論文の内容は、よく丁寧に説明されていて、とてもわかりやすいプレゼンテーションでしたが，機械学習のモデルの説明の部分だけではなく、物理現象として何を予測しているか、どのような物理量を予測対象としているか、またはどのようなインプットデータから何を予測しようとしているかと言う点をもう少し説明できると良かったと思います．録音の成果か分かりませんが，オーディエンスから積極的な質問や提案などディスカッションが盛り上がっていて良かったと思います．
+ 
+面白かった点
+・物理モデルを学習データにしているのに、機械学習モデルの方が予測制度が高かったこと
+・フラックスタワーの情報がデータベースとして公開されていること- このデータは他の研究にも使えそうなので、どこで公開されているかどのように出たか交換されているか確認する必要あり
+・観測のデータ点は少ない，21都市のみ，が，キャノピーモデルを使って、うまくデータを増やし、学習モデルのインプットとしていると言うやり方</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>作成日: 2026年4月9日</p>
+    </footer>
+
+    <style>
+      .transcript-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .transcript-entry {
+        line-height: 1.6;
+      }
+      .timestamp {
+        font-family: var(--mono);
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-right: 8px;
+      }
+      .speaker {
+        font-weight: 700;
+        color: var(--accent-ink);
+        margin-right: 4px;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>会议摘要：基于深层学习的复杂建筑形态城市冠层模型</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">日本語</a>
+      <a href="index_en.html">English</a>
+      <a href="index_ch.html" class="current">中文</a>
+    </nav>
+
+    <main class="container" style="margin-top: 40px;">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2 style="font-size: clamp(1.5rem, 2.8vw, 2rem);">
+            Deep Learning‐Based Urban Canopy Model for Complex Building Morphologies
+          </h2>
+        </div>
+        <div class="card-body">
+          <p style="font-size: 0.95em; color: var(--muted); margin-top: 5px; margin-bottom: 20px;">
+            基于深层学习的复杂建筑形态城市冠层模型
+          </p>
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> 
+              Xinjie Meng, Yongwei Wang, Yuanjian Yang, Qian Huang, Jianping Guo, Yaning Lv, and Zekai Dai
+            </p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              南京信息工程大学；中国气象科学研究院
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1029/2025MS005483" target="_blank" rel="noopener noreferrer">10.1029/2025MS005483</a><br>
+            <strong>Journal:</strong> <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, Volume 18, Pages e2025MS005483, 2026
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>摘要:</strong>
+              深层学习为气象建模提供了新的方法和工具，但其在城市冠层模型（UCM）中的应用仍处于起步阶段。本研究开发了城市冠层神经网络（UCNN），这是一种专为复杂建筑形态设计的基于深层学习的城市冠层模型。在训练 UCNN 时，使用城镇能量平衡（TEB）模型模拟了多种建筑形态的地气交换通量。我们在 TEB 模型中设计了 6 个关键建筑参数的 5,000 种独特组合。这些模拟由来自全球 10 个城市通量塔站点的气象数据驱动，共生成 14,400,000 个数据样本。为了评估泛化能力，UCNN 在来自另外 11 个全球站点的独立观测通量数据集上进行了测试。UCNN 表现出优异的泛化能力，达到了与主流模型相当的精度，同时运行速度比原始 TEB 模型快约 5 倍。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>研究要点</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>开发了一种针对复杂建筑形态构建基于深层学习的城市冠层模型（UCNN）的新方法。</li>
+            <li>利用全球多个不同站点的独立数据验证了模型的泛化能力。</li>
+            <li>该深层学习模型达到了与主流城市冠层模型相当的精度水平，同时计算速度提高了约 5 倍。</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>主要发现</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>使用物理模型（TEB）通过 5,000 种建筑参数的独特组合生成了 1440 万个数据样本用于训练。</li>
+            <li>在预测辐射（短波/长波）和热通量（显热/潜热）方面表现出与传统物理模型相当的高精度。</li>
+            <li>证明了 UCNN 的运行速度比物理模型快约 5 倍，能显著降低计算成本。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>结论</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            本研究开发并验证了基于深层学习的城市冠层模型 UCNN。通过学习 TEB 模拟结果，UCNN 能够准确、快速地预测各种建筑形态和气候条件下地表与大气之间的能量交换。对独立观测数据的验证表明，UCNN 达到了与主要传统物理模型相当的精度，而速度提高了约 5 倍。这表明深层学习可以显著提高复杂城市环境下气象模拟的效率。
+          </p>
+        </div>
+      </section>
+
+      <section id="summary" class="card">
+        <div class="card-header">
+          <h2>会议要点</h2>
+        </div>
+        <div class="card-body">
+          <img src="image.png" alt="会议资料" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+          <div style="white-space: pre-wrap;">本次会议围绕**基于深层学习的复杂建筑形态城市冠层模型（UCNN: Urban Canopy Neural Network）**进行了研究报告及问答。
+
+### 1. 研究背景与目的
+城市冠层模型（UCM）对于模拟地表与大气之间的能量交换至关重要。然而，随着城市的日益复杂，传统的物理模型面临着计算成本高和参数设置困难的问题。本研究旨在通过使用物理模型 **TEB (Town Energy Balance)** 生成多种建筑形态的数据集，并在此基础上训练深层学习模型，构建一个高效且通用的代理模型（UCNN）。
+
+### 2. 方法与数据集
+*   **数据生成：** 在 21 个通量塔站点中，10 个用于训练，11 个用于独立验证。通过 5,000 种建筑形态的随机组合，生成了约 4,040 万个训练样本。
+*   **模型架构：** 采用了结合**多层感知机（MLP）**提取空间特征和**门控循环单元（GRU）**处理时间序列数据的结构。
+*   **输入/输出：** 输入包括气象数据和建筑参数（高度、反射率等），输出为辐射和湍流（热通量）。
+
+### 3. 会议主要问答与讨论
+*   **术语定义：** 会议中对以下术语进行了确认：
+    *   **通量塔：** 与普通气象观测塔不同，它能同时测量热通量和动量通量。
+    *   **辐射类型：** 来自太阳的直接能量（短波辐射）与来自周围物体的能量（长波辐射）的区别。
+    *   **热量类型：** 伴随直接温度变化的“显热”与用于蒸发等状态变化的“潜热”的区别。
+*   **关于精度反转现象的讨论：** 讨论的焦点在于“为什么用物理模型（TEB）数据训练的 UCNN 会比原始 TEB 更准确”。
+    *   **回答：** 解释为损失函数（MSE）可能起到了平滑极端值的作用，从而排除了噪声，提高了统计精度。
+    *   **担忧：** 但也指出这种平滑特性可能导致其**不适用于台风等极端现象的预测**。
+*   **季节与地点：** 确认了冬季数据中辐射量较高的原因是包含了澳大利亚等**南半球**站点。
+
+### 4. 结论与后续计划
+研究表明，深层学习模型能够有效地充当物理模型的代理，实现高计算效率（节省时间和成本）。
+会议一致同意下次会议提前至 **12:30** 开始。</div>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>讨论速记</h2>
+        </div>
+        <div class="card-body">
+          <div class="transcript-container">
+            <div class="transcript-entry">
+              <span class="timestamp">00:00:01</span> <span class="speaker">报告人:</span> 各位早上好。今天我要汇报的是关于复杂建筑形态的基于深层学习的城市冠层模型的研究。城市冠层模型（UCM）对于模拟地表与大气之间的能量交换至关重要。随着城市变得越来越复杂，虽然物理模型可以进行准确模拟，但计算成本高，参数设置也非常困难。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:00:33</span> <span class="speaker">报告人:</span> 此外，城市通量观测数据有限，限制了数据驱动方法的应用。深层学习模型虽然效率高，但以往的许多模型都是基于单站点数据训练的，缺乏表现多样化城市形态的能力。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:01:06</span> <span class="speaker">报告人:</span> 因此，本研究提出了基于深层学习的城市冠层神经网络（UCNN）。我们旨在利用物理模型 TEB 生成包含多样形态的大规模数据集，构建一个通用性强、效率高的代理模型。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:01:39</span> <span class="speaker">参会者:</span> “UCNN”这个缩写有点容易混淆。C 是指“Canopy（冠层）”对吧？<br>
+              <span class="speaker">报告人:</span> 是的，是 Canopy。<br>
+              <span class="speaker">参会者:</span> 虽然容易和 CNN（卷积神经网络）搞混，但它是指冠层，明白了。<br>
+              <span class="speaker">报告人:</span> 关于方法，我们从 21 个塔站中提取了 10 个用于制作训练样本。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:02:22</span> <span class="speaker">报告人:</span> 剩下的 11 个站点作为独立的验证站点。关于建筑形态，我们从变量范围中随机选择了 5,000 种组合。表 2 显示了根据表 1 推导出的 TEB 物理模型所需的参数。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:03:06</span> <span class="speaker">报告人:</span> 从这些组合中生成了 4,040 万个训练样本。其中 95% 用于训练/验证集，5% 用于测试集。图 1 展示了其结构。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:03:36</span> <span class="speaker">报告人:</span> 输入输出如表 3 所示。输入是气象数据和建筑参数，输出是源自 TEB 的标签数据。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:04:10</span> <span class="speaker">参会者:</span> 输入输出变量中有不明白的地方吗？物理意义，比如湿度和气压等，似乎没问题。TEB 是指模拟软件吗？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:04:46</span> <span class="speaker">报告人:</span> 是的，是一个物理模型。<br>
+              <span class="speaker">参会者:</span> 也就是说，是为了训练而生成的数据，而不是实际数据。是怎么生成的？<br>
+              <span class="speaker">报告人:</span> 似乎是使用了单层或为了通用性而使用多层的冠层模型。输入是建筑高度、宽度、颜色等参数，输出是温度吗？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:06:00</span> <span class="speaker">报告人:</span> 输出是辐射和湍流（热输送）。<br>
+              <span class="speaker">参会者:</span> 建筑信息是如何形成的？<br>
+              <span class="speaker">报告人:</span> 从表 1 的范围中随机组合了 5,000 种。<br>
+              <span class="speaker">参会者:</span> 也就是说，几何条件不是真实存在的，而是从随机选择的组合中计算地表热通量？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:06:34</span> <span class="speaker">报告人:</span> 我认为基本组合是基于实际城市的，但生成的参数是根据表 1 的范围推导出来的。<br>
+              <span class="speaker">参会者:</span> 变量范围是如何定义的？<br>
+              <span class="speaker">报告人:</span> 应该是基于实际情况的。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:07:47</span> <span class="speaker">参会者:</span> 我查看了地图，数据似乎来自城市地区。可能选择了靠近通量塔（观测塔）的实际城市信息。顺便问一下，你知道日本的“代代木”吗？<br>
+              <span class="speaker">报告人:</span> 代代木……抱歉，不知道。<br>
+              <span class="speaker">参会者:</span> 是代代木公园。还有西新宿或者东工大。冈山校区也近吧？
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:09:33</span> <span class="speaker">参会者:</span> 因为这个模型是一维冠层模型，所以没有水平分辨率，只表现垂直方向。就像 WAF 模拟的一个网格，或者是 100km 见方的全球模拟那样的概念。萩岛老师的博士论文也是关于多层冠层模型的。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:10:24</span> <span class="speaker">报告人:</span> 本研究使用 MAE（平均绝对误差）作为评估指标。模型结构结合了提取空间特征的多层感知机（MLP）和处理时间序列数据的 GRU（Gated Recurrent Unit）。图 2 展示了 21 个通量塔的位置。绿色代表训练用，红色代表验证用。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:11:43</span> <span class="speaker">参会者:</span> 这些数据谁都可以用吗？<br>
+              <span class="speaker">报告人:</span> 参考文献中列出了数据集。<br>
+              <span class="speaker">参会者:</span> 顺便问一下，知道“通量塔”是什么意思吗？<br>
+              <span class="speaker">报告人:</span> 是观测塔吧。<br>
+              <span class="speaker">参会者:</span> 普通气象站测量风速和温度，但通量塔最大的不同在于能同时测量热通量和动量通量。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:13:01</span> <span class="speaker">参会者:</span> 数据提供者似乎也包括 Matthias Roth 和菅原老师。<br>
+              <span class="speaker">报告人:</span> 结果方面，图 3 是 UCNN 与 TEB 的对比。关于辐射，散点集中在 1:1 线上，向上短波辐射的 MAE 仅为 2.05 W/m²。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:14:02</span> <span class="speaker">报告人:</span> 另一方面，湍流通量的预测误差比辐射大，呈云状分散。显热（QH）的 MAE 为 13.27 W/m²。这表明 UCNN 更容易捕捉辐射通量。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:15:13</span> <span class="speaker">参会者:</span> 知道“显热（Sensible Heat）”和“潜热（Latent Heat）”的意思吗？还有“短波（Short wave）”和“长波（Long wave）”的区别？<br>
+              <span class="speaker">报告人:</span> 是波数的区别吗……？<br>
+              <span class="speaker">参会者:</span> 来自太阳的直接能量、来自高温物体的是短波辐射。当它照射到地面导致温度变化，从周围低温物体放射出的是长波辐射。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:17:57</span> <span class="speaker">参会者:</span> 显热是伴随直接温度变化的热传递，潜热是用于水蒸发成气体等状态变化的热量。<br>
+              <span class="speaker">报告人:</span> 由于湍流通量和输入数据之间存在复杂的非线性耦合，QH 的误差较大。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:19:06</span> <span class="speaker">报告人:</span> 图 5 展示了日变化，UCNN 的结果与 TEB 高度一致，但与实测值（Observation）略有偏差。下午时段 UCNN 往往比 TEB 的值低。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:20:19</span> <span class="speaker">报告人:</span> 在图 6 的精度比较中，许多站点位于 1:1 线周围，可见 UCNN 具有很高的精度。但在图 B 和 C 中，许多站点位于线的右下方，暗示 UCNN 可能低估结果。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:22:01</span> <span class="speaker">报告人:</span> 在夏冬对比（图 7, 8）中，UCNN 似乎在夏季低估，在冬季高估。<br>
+              <span class="speaker">参会者:</span> 确认一下，这个观测站点在哪里？我很好奇为什么冬天短波辐射比夏天高。<br>
+              <span class="speaker">报告人:</span> 6 月到 7 月的数据被当作冬季……啊，是南半球。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:24:05</span> <span class="speaker">参会者:</span> 原来如此，澳大利亚之类的。所以 12 月和 1 月的短波辐射很强。<br>
+              <span class="speaker">报告人:</span> 总之，本模型具有与现有的 13 个城市冠层模型相媲美的预测能力，证明了深层学习作为物理模型代理的可行性。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:27:49</span> <span class="speaker">参会者:</span> 关于结论有个问题。既然是用物理模型 TEB 的数据进行训练的，为什么能说“比原始 TEB 更准确”？精度超过学习源是很神奇的。<br>
+              <span class="speaker">报告人:</span> 可能是因为 UCNN 使用的 MSE（平均平方误差）损失函数起到了抑制峰值、避开极端值的作用。因此，可能更接近“真值（Ground Truth）”。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:31:16</span> <span class="speaker">参会者:</span> 是不是说机器学习的过程判别并平滑了原始数据中包含的“噪声”？使用 TEB 的好处是可以增加训练样本数量。<br>
+              <span class="speaker">报告人:</span> 是的。此外，机器学习模型的优点在于效率。可以大幅削减计算成本和时间。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:34:10</span> <span class="speaker">参会者:</span> 如果是通过“平滑”极端条件来提高精度，那是不是意味着它不能用于预测台风等异常天气？<br>
+              <span class="speaker">报告人:</span> 也许确实如此。如果它是舍弃了极少数条件来提高平均精度，那在实际应用上仍存在挑战。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:37:59</span> <span class="speaker">参会者:</span> 这个模型不考虑地点差异，只根据建筑几何参数和气候条件进行预测。所以各站点之间才会出现偏差吧。<br>
+              <span class="speaker">报告人:</span> 是的，似乎是这样。
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:40:19</span> <span class="speaker">参会者:</span> 明白了，谢谢。那今天的会议就到这里。<br>
+              <span class="speaker">参会者:</span> 下周是 14 点开始，能稍微提前一点到 12:30 开始吗？<br>
+              <span class="speaker">全体:</span> 好的，12:30 没问题。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comments" class="card">
+        <div class="card-header">
+          <h2>评语</h2>
+        </div>
+        <div class="card-body">
+          <div style="white-space: pre-wrap;">使用 UCNN (Urban Canopy Neuralnetwork Model) 估算一维冠层模型计算的短波/长波辐射量及地表潜热/显热通量的模型。
+报告人：Wan Mingxuan
+这是一篇关于提议使用机器学习预测一维冠层模型输出的论文报告。这是一篇关于城市气象热岛效应领域的论文，报告了根据通量塔数据估算一维冠层计算的波长、波辐射量及地表潜热/显热通量的模型。得出的结论是，学习模型的预测精度高于冠层模型，这是一个非常神奇的结果，即性能超过了作为输入数据的冠层模型。
+论文内容解释得很仔细，演示也非常易懂。不过，我认为如果不仅是对机器学习模型的解释，还能更多地说明作为物理现象在预测什么、以什么物理量为预测对象，或者从什么输入数据预测什么，效果会更好。不知是否是录音的效果，观众的提问和建议等讨论非常热烈，我觉得很好。
+ 
+有趣的点：
+- 虽然以物理模型为学习数据，但机器学习模型的预测精度更高。
+- 通量塔的信息作为数据库公开。这些数据似乎可以用于其他研究，因此有必要确认在哪里公开以及如何共享。
+- 虽然观测数据点较少（仅 21 个城市），但利用冠层模型成功增加了数据，并将其作为学习模型的输入。</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>创建日期：2026年4月9日</p>
+    </footer>
+
+    <style>
+      .transcript-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .transcript-entry {
+        line-height: 1.6;
+      }
+      .timestamp {
+        font-family: var(--mono);
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-right: 8px;
+      }
+      .speaker {
+        font-weight: 700;
+        color: var(--accent-ink);
+        margin-right: 4px;
+      }
+    </style>
+  </body>
+</html>

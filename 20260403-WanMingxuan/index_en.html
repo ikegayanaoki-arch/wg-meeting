@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meeting Summary: Deep Learning‐Based Urban Canopy Model for Complex Building Morphologies</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">日本語</a>
+      <a href="index_en.html" class="current">English</a>
+      <a href="index_ch.html">中文</a>
+    </nav>
+
+    <main class="container" style="margin-top: 40px;">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2 style="font-size: clamp(1.5rem, 2.8vw, 2rem);">
+            Deep Learning‐Based Urban Canopy Model for Complex Building Morphologies
+          </h2>
+        </div>
+        <div class="card-body">
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> 
+              Xinjie Meng, Yongwei Wang, Yuanjian Yang, Qian Huang, Jianping Guo, Yaning Lv, and Zekai Dai
+            </p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              Nanjing University of Information Science and Technology; Chinese Academy of Meteorological Sciences
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1029/2025MS005483" target="_blank" rel="noopener noreferrer">10.1029/2025MS005483</a><br>
+            <strong>Journal:</strong> <em>Journal of Advances in Modeling Earth Systems (JAMES)</em>, Volume 18, Pages e2025MS005483, 2026
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>Abstract:</strong>
+              Deep learning offers new methodologies and tools for meteorological modeling, yet its application in urban canopy models remains nascent. This study develops an Urban Canopy Neural Network (UCNN), a deep learning‐based urban canopy model designed for complex building morphologies. When training the UCNN, the Town Energy Balance (TEB) model was used to simulate land‐atmosphere exchange fluxes of diverse building morphologies. We designed 5,000 unique combinations of six key building parameters in the TEB model. These simulations were driven by meteorological data from 10 urban flux tower sites across globally diverse regions, generating a total of 14,400,000 data samples. To evaluate generalization, the UCNN was tested against an independent set of observational flux data from 11 additional global sites. The UCNN demonstrated excellent generalization, achieving performance comparable to mainstream models while running approximately five times faster than the original TEB model.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>Key Points</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>A new method was developed to build a deep learning‐based urban canopy model (UCNN) for complex building morphologies.</li>
+            <li>The model's generalization ability was validated using independent data from multiple diverse sites globally.</li>
+            <li>The deep learning‐based model achieves an accuracy level comparable to that of mainstream urban canopy models while improving computational speed by about five times.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>Main Findings</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Used the physical model (TEB) to generate 14.4 million data samples from 5,000 unique combinations of building parameters for training.</li>
+            <li>Demonstrated high accuracy comparable to traditional physical models in predicting radiation (shortwave/longwave) and heat fluxes (sensible/latent).</li>
+            <li>Proved that UCNN operates approximately five times faster than physical models, enabling significant reductions in computational costs.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>Conclusion</h2>
+        </div>
+        <div class="card-body">
+          <p>
+            This study developed and validated UCNN, a deep learning-based urban canopy model. By learning from TEB simulation results, UCNN can accurately and rapidly predict energy exchange between the surface and atmosphere under various building morphologies and climatic conditions. Validation against independent observational data showed that UCNN achieves accuracy comparable to major conventional physical models while being about five times faster. This demonstrates that deep learning can significantly contribute to the efficiency of meteorological simulations in complex urban environments.
+          </p>
+        </div>
+      </section>
+
+      <section id="summary" class="card">
+        <div class="card-header">
+          <h2>Meeting Summary</h2>
+        </div>
+        <div class="card-body">
+          <img src="image.png" alt="Meeting Materials" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+          <div style="white-space: pre-wrap;">In this meeting, a research presentation and Q&A session were held regarding the **Urban Canopy Neural Network (UCNN)**, a deep learning-based urban canopy model for complex building morphologies.
+
+### 1. Research Background and Objectives
+Urban Canopy Models (UCMs) are essential for simulating energy exchange between the surface and the atmosphere. However, as cities become more complex, traditional physical models face high computational costs and difficulties in parameter settings. This study aims to build an efficient and highly versatile surrogate model (UCNN) by generating a dataset of diverse building morphologies using the physical model **TEB (Town Energy Balance)** and training a deep learning model on it.
+
+### 2. Methodology and Dataset
+*   **Data Generation:** 10 of 21 flux tower sites were used for training, and 11 sites were used for independent validation. Approximately 40.4 million training samples were generated from 5,000 random combinations of building morphologies.
+*   **Model Architecture:** A structure combining **Multi-Layer Perceptron (MLP)** for spatial feature extraction and **Gated Recurrent Unit (GRU)** for time-series data processing is adopted.
+*   **Input/Output:** Inputs include meteorological data and building parameters (height, albedo, etc.), and outputs are radiation and turbulence (Heat flux).
+
+### 3. Key Q&A and Discussions
+*   **Definition of Technical Terms:** The following terms were clarified during the meeting:
+    *   **Flux Tower:** Unlike regular weather stations, these facilities can simultaneously measure heat and momentum fluxes.
+    *   **Types of Radiation:** Difference between direct solar energy (shortwave) and energy emitted from surrounding objects (longwave).
+    *   **Types of Heat:** Distinction between "Sensible Heat," involving direct temperature changes, and "Latent Heat," used for phase changes like evaporation.
+*   **Discussion on Accuracy Inversion:** A point of discussion was why UCNN, trained on data from a physical model (TEB), could be more accurate than the original TEB.
+    *   **Response:** It was explained that the loss function (MSE) might smooth out extreme values, eliminating noise and improving statistical accuracy.
+    *   **Concern:** However, it was pointed out that this smoothing property might make it **unsuitable for predicting extreme phenomena like typhoons**.
+*   **Season and Location:** High radiation levels in winter data were confirmed to be due to the inclusion of sites in the **Southern Hemisphere**, such as Australia.
+
+### 4. Conclusion and Future Plans
+This research demonstrated that deep learning models can function effectively as surrogates for physical models, achieving high computational efficiency (saving time and cost).
+It was agreed to start the next meeting earlier at **12:30 PM**.</div>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>Discussion Transcript</h2>
+        </div>
+        <div class="card-body">
+          <div class="transcript-container">
+            <div class="transcript-entry">
+              <span class="timestamp">00:00:01</span> <span class="speaker">Presenter:</span> Good morning. Today, I will present a paper on a deep learning-based urban canopy model for complex building morphologies. Urban Canopy Models (UCMs) are indispensable for simulating the energy exchange between the ground surface and the atmosphere. As urban areas become more complex, accurate simulations using physical models are possible, but they are computationally expensive and parameter settings are very difficult.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:00:33</span> <span class="speaker">Presenter:</span> Also, urban flux observation data is limited, which restricts data-driven approaches. While deep learning models are highly efficient, many traditional models are trained on single-site data and lack the ability to represent diverse urban morphologies.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:01:06</span> <span class="speaker">Presenter:</span> Therefore, in this study, we proposed the Urban Canopy Neural Network (UCNN). We aim to build a highly versatile and efficient surrogate model by generating a large-scale dataset including various morphologies using the Town Energy Balance (TEB) physical model.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:01:39</span> <span class="speaker">Participant:</span> The abbreviation "UCNN" is a bit confusing. The "C" stands for "Canopy," right?<br>
+              <span class="speaker">Presenter:</span> Yes, it's Canopy.<br>
+              <span class="speaker">Participant:</span> I thought it might be confused with CNN (Convolutional Neural Network), but it's Canopy. Okay.<br>
+              <span class="speaker">Presenter:</span> Regarding the methodology, we extracted 10 out of 21 tower sites for creating training samples.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:02:22</span> <span class="speaker">Presenter:</span> The remaining 11 sites are used as independent validation sites. For building morphologies, we prepared 5,000 combinations randomly selected from the variable ranges. Table 2 shows the parameters required for the TEB physical model derived from Table 1.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:03:06</span> <span class="speaker">Presenter:</span> From these combinations, 40.4 million training samples were generated. 95% of them are used for the training/validation set, and 5% for the test set. Figure 1 shows the structure.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:03:36</span> <span class="speaker">Presenter:</span> Inputs and outputs are shown in Table 3. Inputs are meteorological data and building parameters, and outputs are label data derived from TEB.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:04:10</span> <span class="speaker">Participant:</span> Are there any input/output variables you don't understand? Physical meanings like humidity and pressure seem fine. Is TEB simulation software?
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:04:46</span> <span class="speaker">Presenter:</span> Yes, it's a physical model.<br>
+              <span class="speaker">Participant:</span> So you generated data for training instead of using actual data. How?<br>
+              <span class="speaker">Presenter:</span> It seems they use a single-layer or multi-layer canopy model for versatility. Inputs are parameters like building height, width, and color, and is the output temperature?
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:06:00</span> <span class="speaker">Presenter:</span> Outputs are radiation and turbulence (heat transport).<br>
+              <span class="speaker">Participant:</span> How is building information formed?<br>
+              <span class="speaker">Presenter:</span> 5,000 combinations are randomly combined from the ranges in Table 1.<br>
+              <span class="speaker">Participant:</span> So, the geometric conditions are not real but from random combinations, and you're calculating the surface heat flux from them?
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:06:34</span> <span class="speaker">Presenter:</span> I think basic combinations are based on actual cities, but the generated parameters are derived from the ranges in Table 1.<br>
+              <span class="speaker">Participant:</span> How were the variable ranges defined?<br>
+              <span class="speaker">Presenter:</span> They should probably be based on actual situations.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:07:47</span> <span class="speaker">Participant:</span> I checked the map, and the data seems to be from urban areas. They are likely choosing actual urban information close to flux towers. By the way, do you know "Yoyogi" in Japan?<br>
+              <span class="speaker">Presenter:</span> Yoyogi... I'm sorry, I don't know.<br>
+              <span class="speaker">Participant:</span> It's Yoyogi Park. Also, Nishi-Shinjuku or Tokyo Tech. Is the Okayama campus close too?
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:09:33</span> <span class="speaker">Participant:</span> This model is a 1D canopy model, so it has no horizontal resolution and only represents the vertical direction. It's like one mesh of a WAF simulation or a 100km square global simulation. Professor Hagishima's doctoral thesis was also about multi-layer canopy models.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:10:24</span> <span class="speaker">Presenter:</span> In this study, MAE (Mean Absolute Error) is used as an evaluation index. The model structure combines MLP for spatial feature extraction and GRU for time-series data processing. Figure 2 shows the locations of 21 flux towers. Green is for training, and red is for validation.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:11:43</span> <span class="speaker">Participant:</span> Is this data available to everyone?<br>
+              <span class="speaker">Presenter:</span> The dataset is listed in the references.<br>
+              <span class="speaker">Participant:</span> By the way, do you know what "Flux Tower" means?<br>
+              <span class="speaker">Presenter:</span> It's an observation tower, right?<br>
+              <span class="speaker">Participant:</span> Normal weather stations measure wind speed and temperature, but the big difference is that flux towers can simultaneously measure heat and momentum fluxes.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:13:01</span> <span class="speaker">Participant:</span> It seems Matthias Roth and Professor Sugawara are also included as data providers.<br>
+              <span class="speaker">Presenter:</span> Regarding results, Figure 3 shows UCNN vs TEB. For radiation, the scatter plots are concentrated on the 1:1 line, and the MAE for upward shortwave radiation was only 2.05 W/m².
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:14:02</span> <span class="speaker">Presenter:</span> On the other hand, prediction errors for turbulent flux are larger than radiation and are scattered like a cloud. The MAE for sensible heat (QH) is 13.27 W/m². This shows that radiation flux is easier to capture with UCNN.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:15:13</span> <span class="speaker">Participant:</span> Do you know the meaning of "Sensible Heat" and "Latent Heat"? And the difference between "Short wave" and "Long wave"?<br>
+              <span class="speaker">Presenter:</span> Is it the difference in wave numbers?<br>
+              <span class="speaker">Participant:</span> Direct energy from the sun or from high-temperature objects is shortwave radiation. When it hits the ground and the temperature changes, the radiation from surrounding low-temperature objects is longwave radiation.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:17:57</span> <span class="speaker">Participant:</span> Sensible heat is heat transfer accompanied by direct temperature change, and latent heat is the heat used for phase changes, such as water evaporating into gas.<br>
+              <span class="speaker">Presenter:</span> Because there are complex non-linear couplings between turbulent flux and input data, the error in QH is larger.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:19:06</span> <span class="speaker">Presenter:</span> Figure 5 shows diurnal variations, and UCNN results show high agreement with TEB, but there is some deviation from the observations. UCNN tends to show lower values than TEB in the afternoon.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:20:19</span> <span class="speaker">Presenter:</span> In the accuracy comparison in Figure 6, many sites are located around the 1:1 line, showing that UCNN has high accuracy. However, in Figures B and C, many sites are located at the bottom right of the line, suggesting that UCNN may underestimate results.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:22:01</span> <span class="speaker">Presenter:</span> In the comparison between summer and winter (Figures 7 and 8), UCNN seems to underestimate in summer and overestimate in winter.<br>
+              <span class="speaker">Participant:</span> One confirmation: where is this observation site? I'm curious why shortwave radiation is higher in winter than in summer.<br>
+              <span class="speaker">Presenter:</span> Data from June to July is treated as winter... Oh, it's the Southern Hemisphere.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:24:05</span> <span class="speaker">Participant:</span> I see, Australia and so on. That's why shortwave radiation is strong in December and January.<br>
+              <span class="speaker">Presenter:</span> In conclusion, this model has predictive capabilities comparable to the existing 13 urban canopy models, demonstrating that deep learning is feasible as a surrogate for physical models.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:27:49</span> <span class="speaker">Participant:</span> Question about the conclusion. You're training it with data from the TEB physical model, so why can you say it's "more accurate than the original TEB"? It's strange to get higher accuracy than the source data.<br>
+              <span class="speaker">Presenter:</span> It might be because the MSE (Mean Squared Error) loss function used in UCNN acts to suppress peak values and avoid extreme values. As a result, it may be closer to the "Ground Truth."
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:31:16</span> <span class="speaker">Participant:</span> Does it mean the machine learning process identifies "noise" in the original data and smooths it? The advantage of using TEB is that you can increase the number of training samples.<br>
+              <span class="speaker">Presenter:</span> Yes. Also, the advantage of machine learning models is efficiency. Computational cost and time can be significantly reduced.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:34:10</span> <span class="speaker">Participant:</span> If it smooths out extreme conditions to improve accuracy, doesn't that mean it cannot be used to predict abnormal weather like typhoons?<br>
+              <span class="speaker">Presenter:</span> That might be true. If it discards very rare conditions to improve average accuracy, practical challenges remain.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:37:59</span> <span class="speaker">Participant:</span> This model predicts based only on the geometric parameters of buildings and climate conditions, without considering location differences. That's probably why there are deviations for each site.<br>
+              <span class="speaker">Presenter:</span> Yes, that seems to be the case.
+            </div>
+            <div class="transcript-entry">
+              <span class="timestamp">00:40:19</span> <span class="speaker">Participant:</span> I see, thank you very much. Let's end today's meeting here.<br>
+              <span class="speaker">Participant:</span> Next week is from 2:00 PM, but is it okay to start a bit earlier at 12:30 PM?<br>
+              <span class="speaker">Everyone:</span> Yes, 12:30 PM is fine.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comments" class="card">
+        <div class="card-header">
+          <h2>Comments</h2>
+        </div>
+        <div class="card-body">
+          <div style="white-space: pre-wrap;">A model that estimates shortwave/longwave radiation and surface latent/sensible heat fluxes calculated by a 1D canopy model using UCNN (Urban Canopy Neural Network Model).
+Reporter: Wan Mingxuan
+It was a report on a paper proposing a model that predicts the output of a 1D canopy model using machine learning. It was a paper in the field of urban climate and heat islands, reporting on a model that estimates wavelength and wave radiation and surface latent/sensible heat fluxes calculated by a 1D canopy based on flux tower data. The conclusion was that the prediction accuracy of the learning model is higher than that of the canopy model, which was a mysterious result that it became higher performance than the canopy model given as input data.
+The content of the paper was explained very carefully and it was a very easy-to-understand presentation. However, I think it would have been better if there had been a little more explanation not only about the machine learning model but also about what is being predicted as a physical phenomenon, what physical quantities are being targeted for prediction, or what is being predicted from what input data. I don't know if it was the result of the recording, but I think it was good that the discussion was lively with active questions and proposals from the audience.
+ 
+Interesting points:
+- Even though the physical model was used as training data, the machine learning model had higher prediction accuracy.
+- Flux tower information is published as a database. This data seems usable for other research, so it is necessary to check where and how it is shared.
+- Although the observation data points are few (only 21 cities), they use the canopy model to successfully increase data and use it as input for the learning model.</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Created on: April 9, 2026</p>
+    </footer>
+
+    <style>
+      .transcript-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .transcript-entry {
+        line-height: 1.6;
+      }
+      .timestamp {
+        font-family: var(--mono);
+        color: var(--muted);
+        font-size: 0.85rem;
+        margin-right: 8px;
+      }
+      .speaker {
+        font-weight: 700;
+        color: var(--accent-ink);
+        margin-right: 4px;
+      }
+    </style>
+  </body>
+</html>
