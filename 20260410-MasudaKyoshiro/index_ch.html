@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>会议摘要: Searching for turbulence models by artificial neural network</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <style>
+      .transcript-container {
+        display: grid;
+        gap: 15px;
+      }
+      .transcript-item {
+        display: flex;
+        gap: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .transcript-item:last-child {
+        border-bottom: none;
+      }
+      .timestamp {
+        font-family: var(--mono);
+        color: var(--muted);
+        min-width: 85px;
+        font-size: 0.85rem;
+        padding-top: 2px;
+      }
+      .message {
+        flex: 1;
+        font-size: 0.95rem;
+      }
+      .meeting-image {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+      }
+      .summary-content {
+        white-space: pre-wrap;
+      }
+      .lang-switcher {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(246, 239, 228, 0.8);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">日本語</a>
+      <a href="index_en.html">English</a>
+      <a href="index_ch.html" class="current">中文</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Research Summary & Meeting Minutes</p>
+        <h1>会议摘要</h1>
+        <p class="lead">关于通过人工神经网络搜索乱流模型的研究及会议记录</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2>Searching for turbulence models by artificial neural network</h2>
+        </div>
+        <div class="card-body">
+          <p style="font-size: 1.1em; color: var(--accent-ink); margin-bottom: 20px; font-weight: 500;">
+            通过人工神经网络搜索乱流模型
+          </p>
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> Masataka Gamahara, Yuji Hattori</p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              Masataka Gamahara: Graduate School of Information Sciences, Tohoku University; 
+              Yuji Hattori: Institute of Fluid Science, Tohoku University
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.2.054604" target="_blank" rel="noopener noreferrer">10.1103/PhysRevFluids.2.054604</a><br>
+            <strong>Journal:</strong> <em>PHYSICAL REVIEW FLUIDS</em>, Volume 2, Pages 054604-1 - 054604-20, Year 2017
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>Abstract:</strong><br>
+              本文测试了人工神经网络（ANN）作为在大型涡流模拟（LES）中寻找亚网格尺度（SGS）应力新亚网格模型的工具。ANN用于建立网格尺度流场与SGS应力之间的函数关系，无需任何函数形式の假设。训练和测试ANN所需的数据由湍流槽道流的直接数值模拟（DNS）提供。结果表明，ANN可以建立类似于梯度模型的模型。实际SGS应力与ANN输出之间的相关系数与相似模型相当或更大，但小于双参数动态混合模型。此外，还使用了训练好的ANN进行了大型涡流模拟。虽然ANN模型在Smagorinsky模型面前没有显示出优势，但结果证实，经过进一步改进，ANN是建立新亚网格模型的有前途的工具。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>研究要点</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>提出将人工神经网络（ANN）作为为湍流的大型涡流模拟（LES）建立新的亚网格尺度（SGS）模型的工具。</li>
+            <li>使用湍流槽道流的直接数值模拟（DNS）数据对ANN进行训练和测试，以寻找网格尺度流场与SGS应力之间的函数关系。</li>
+            <li>将基于ANN的模型性能与Smagorinsky模型和梯度模型等现有模型进行了比较。</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>主要发现</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>ANN能够创建类似于梯度模型的模型，预测的SGS应力与实际SGS应力之间具有较高的相关系数。</li>
+            <li>基于ANN的模型显示出与相似模型相当或更高的相关系数，但小于双参数动态混合模型。</li>
+            <li>虽然事后测试显示ANN模型在预测平均流方面与Smagorinsky模型相比没有显著优势，但它证明了ANN是开发新湍流模型的一种有前途的方法。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>结论</h2>
+        </div>
+        <div class="card-body">
+          <p>本研究验证了人工神经网络（ANN）在开发大型涡流模拟（LES）中新的亚网格尺度（SGS）模型方面的有效性。使用湍流槽道流的直接数值模拟（DNS）数据作为训练数据，表明ANN能够构建接近梯度模型的SGS应力模型。虽然ANN模型表现出与现有模型相当或更好的相关性，但并未观察到巨大优势。然而，研究确认了ANN是构建新湍流模型的有力工具。尽管仍需进一步改进，但使用ANN的方法被认为是发现新型及改良湍流模型的极具前景的方法论。</p>
+        </div>
+      </section>
+
+      <section id="meeting" class="card">
+        <div class="card-header">
+          <h2>会议要点</h2>
+        </div>
+        <div class="card-body">
+          <img src="src/image.png" alt="Meeting Image" class="meeting-image" />
+          <div class="summary-content">
+04-10 周例会：高层建筑阳台风洞与CFD对比（RANS vs LES）- 摘要
+会议信息
+日期: 2026-04-10 12:33:10
+参加者: [发言人 1] [发言人 2] [发言人 3] [发言人 4] [发言人 5] [发言人 6]
+
+会议记录
+- 新成员介绍与运营方针：
+  - 今年开始接收冲绳、有明的高专生，通过在线/混合模式直播。
+  - 解释以英语为核心进行会议的原因。
+- 研究发表：带阳台高层建筑的风洞与CFD对比（RANS vs LES）
+  - RANS在模拟剥离和低估背风面压力绝对值方面较弱。
+  - LES在所有条件下偏差均<0.1，一贯具有更高精度。
+  - 在阳台环境风评价中，RANS可能会低估强风风险。
+- 技术问答：
+  - 讨论LESIQ定义及RANS模型合理性（k-ε vs k-ω）。
+- 运营、礼仪与学习要求：
+  - 转发关于服装礼仪（外部场合佩戴帽子）的提醒，建议自我管理工作时间。
+          </div>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>会议记录</h2>
+        </div>
+        <div class="card-body">
+          <div class="transcript-container">
+            <div class="transcript-item"><div class="timestamp">00:00:02</div><div class="message">可以吗？开始吗？啊，我可以降低一个吗？让C去拍。回收了吗？C，去拍一下。啊，阿里先生，阿里是你吗？你登录了吗？</div></div>
+            <div class="transcript-item"><div class="timestamp">00:01:23</div><div class="message">镜头对准真正的员工。啊，大声说话的话，焦距会自动对准自己。在开始之前，让我发布一个通知，这是新成员加入我们实验室后的第一次，我们每周都会举行这个周例会。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:06:01</div><div class="message">大概30分钟后到。所以别担心。到时候我们会让他做个简短的演讲。那么，我们开始吧？大家好。今天，我将讲解带阳台建筑的风流动和平均表面压力的CFD模拟（基于RANS和LES）。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:14:56</div><div class="message">(...) 比较代表整个阳台平均风速的面积加权平均K时，RANS在2层低约35%，在9层低约39%（与LES相比）。这些结果表明，在使用RANS进行阳台内风环境评估时必须谨慎，因为它可能会低估强风风险。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:54:27</div><div class="message">会议到此结束。非常感谢。下周二下午见。</div></div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--muted); margin-top: 10px;">* 会议记录部分内容已省略。</p>
+        </div>
+      </section>
+
+      <section id="comment" class="card">
+        <div class="card-header">
+          <h2>评论</h2>
+        </div>
+        <div class="card-body">
+          <div class="summary-content">
+2026年4月10日：关于带阳台建筑表面风压计算精度的研究
+报告人：Masuda Kyoshiro
+
+虽然强调了LES对表面风压具有更高的再现性，但这是众所周知的事实。从实务角度看，指出RANS低估阳台内部风速并可能忽略强风风险是一个重要的视角。演示组织得非常好，对新学生来说是一个很好的入门。
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>创建日期: 2026年04月12日</p>
+    </footer>
+
+  </body>
+</html>

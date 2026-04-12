@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>会議概要: Searching for turbulence models by artificial neural network</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <style>
+      .transcript-container {
+        display: grid;
+        gap: 15px;
+      }
+      .transcript-item {
+        display: flex;
+        gap: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .transcript-item:last-child {
+        border-bottom: none;
+      }
+      .timestamp {
+        font-family: var(--mono);
+        color: var(--muted);
+        min-width: 85px;
+        font-size: 0.85rem;
+        padding-top: 2px;
+      }
+      .message {
+        flex: 1;
+        font-size: 0.95rem;
+      }
+      .meeting-image {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+      }
+      .summary-content {
+        white-space: pre-wrap;
+      }
+      .lang-switcher {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(246, 239, 228, 0.8);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html" class="current">日本語</a>
+      <a href="index_en.html">English</a>
+      <a href="index_ch.html">中文</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Research Summary & Meeting Minutes</p>
+        <h1>会議概要</h1>
+        <p class="lead">人工ニューラルネットワークを用いた乱流モデルの探索に関する研究と会議の記録</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2>Searching for turbulence models by artificial neural network</h2>
+        </div>
+        <div class="card-body">
+          <p style="font-size: 1.1em; color: var(--accent-ink); margin-bottom: 20px; font-weight: 500;">
+            人工ニューラルネットワークによる乱流モデルの探索
+          </p>
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> Masataka Gamahara, Yuji Hattori</p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              Masataka Gamahara: Graduate School of Information Sciences, Tohoku University; 
+              Yuji Hattori: Institute of Fluid Science, Tohoku University
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.2.054604" target="_blank" rel="noopener noreferrer">10.1103/PhysRevFluids.2.054604</a><br>
+            <strong>Journal:</strong> <em>PHYSICAL REVIEW FLUIDS</em>, Volume 2, Pages 054604-1 - 054604-20, Year 2017
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>Abstract:</strong><br>
+              An artificial neural network (ANN) is tested as a tool for finding a new subgrid model of the subgrid-scale (SGS) stress in large-eddy simulation. An ANN is used to establish a functional relation between the grid-scale flow field and the SGS stress without any assumption of the form of function. Data required for training and test of the ANN are provided by direct numerical simulation of a turbulent channel flow. It is shown that an ANN can establish a model similar to the gradient model. The correlation coefficients between the real SGS stress and the output of the ANN are comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model. Large-eddy simulations using the trained ANN are also performed. Although ANN models show no advantage over the Smagorinsky model, the results confirm that the ANN is a promising tool for establishing a new subgrid model with further improvement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>研究のポイント</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>大規模渦シミュレーション（LES）における新しいサブグリッドスケール（SGS）モデルを構築するためのツールとして、人工ニューラルネットワーク（ANN）を提案。</li>
+            <li>乱流チャネル流の直接数値計算（DNS）データを用いてANNを訓練・テストし、格子スケールの流れ場とSGS応力の間の関数関係を特定。</li>
+            <li>ANNベースのモデルの性能を、スマゴリンスキーモデルや勾配モデルなどの既存モデルと比較評価。</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>主な発見</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>ANNは勾配モデルに類似したモデルを構築でき、予測されたSGS応力と実際のSGS応力の間に高い相関を実現。</li>
+            <li>ANNモデルの相関係数は相似モデルと同等かそれ以上であったが、2パラメータ動的混合モデルには及ばなかった。</li>
+            <li>事後テストではスマゴリンスキーモデルに対する明確な優位性は見られなかったが、ANNが新しい乱流モデル開発の有望なアプローチであることを確認。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>結論</h2>
+        </div>
+        <div class="card-body">
+          <p>本研究では、大規模渦シミュレーション（LES）における新しいサブグリッドスケール（SGS）モデルを開発するために、人工ニューラルネットワーク（ANN）の有効性を検証した。乱流チャネル流の直接数値計算（DNS）データを学習データとして使用し、ANNは勾配モデルに近いSGS応力モデルを構築可能であることを示した。ANNモデルは既存モデルと同等以上の相関を示したが、大きな利点は見られなかった。しかし、ANNが新しい乱流モデルを構築するための有望なツールであることが確認された。さらなる改良が必要ではあるものの、ANNを用いた手法は、新規かつ改良された乱流モデルを発見するための有望な方法論であると結論付けられる。</p>
+        </div>
+      </section>
+
+      <section id="meeting" class="card">
+        <div class="card-header">
+          <h2>会議の要点</h2>
+        </div>
+        <div class="card-body">
+          <img src="src/image.png" alt="Meeting Image" class="meeting-image" />
+          <div class="summary-content">
+04-10 週次ミーティング: 高層建築バルコニー風洞・CFD比較（RANS vs LES）と運営方針・次回予定-Summary
+会議情報
+日付: 2026-04-10 12:33:10
+参加者: [Speaker 1] [Speaker 2] [Speaker 3] [Speaker 4] [Speaker 5] [Speaker 6]
+
+議事録
+- 新規参加者の紹介と運営方針
+  - 今年度から沖縄・有明の高専生を受け入れ、オンライン・ハイブリッドで配信。
+  - 週次ミーティングの運用説明：学生が持ち回りで報告し、Zoomで画面共有。
+- 研究発表：バルコニー付き高層建築の風洞・CFD比較（RANS vs LES）
+  - RANSは風上面の圧力予測は良好だが、剥離・再循環・再付着の再現や背面圧の絶対値で弱い。
+  - LESは全条件で偏差<0.1を維持し、RANSよりも一貫して高精度。
+  - RANSはバルコニー環境風評価で強風リスクを過小評価し得る。
+- 技術的質疑・補足
+  - LESIQ（直接解像TKE比）の定義・算出法について議論。
+  - RANSのモデル選択（k-ε vs k-ω）の妥当性。
+- 運営・マナー・学習のお願い
+  - 発表者は事前に論文を読み、基礎部分のキャッチアップを。
+  - 服装マナー（外部発表時のキャップ着用）への注意。
+          </div>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>議論のトランスクリプト</h2>
+        </div>
+        <div class="card-body">
+          <div class="transcript-container">
+            <div class="transcript-item"><div class="timestamp">00:00:02</div><div class="message">いいですか?やりますか? あ、1個下回っていい? で、Cさんに撮りに行かせてください. リサイクルした? Cさん、撮りに行って. あー、アリさん, アリはあなたですか? ログインしていますか?</div></div>
+            <div class="transcript-item"><div class="timestamp">00:00:39</div><div class="message">あーはいはい、今。コートがある? ランドしてる? してるね? スタッフから スタッフね? オッケー、オッケー、ブリュース リアルスタッフ。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:01:23</div><div class="message">カメラにリアルスタッフ。ああ、声を上げると自動的に自分にフォーカスが当たりますね。では、その前にアナウンスをさせてください。これは新入生が研究室に加わってから初めてのことで、毎週この週次ミーティングを行っています。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:01:55</div><div class="message">ぜひ参加してください。毎回一人の学生がレポートを発表し、知識を共有します。また、今年から沖縄や有明高専など、異なる研究機関から高専生を迎え入れています。彼らのうち一人がログインしていませんが、そのため、彼らも部分的に参加できるようにオンライン・ハイブリッド形式で行い、中継しています。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:02:33</div><div class="message">もし画面を見るのが簡単であれば、ログインしても構いません。プレゼンテーションを行う際は、同じZoomルームにログインして画面を共有してください。そうすれば全員が見ることができます。いいですか？</div></div>
+            <div class="transcript-item"><div class="timestamp">00:03:09</div><div class="message">始める前に、新入生の簡単な自己紹介を行うのが良いでしょう。まだ知らない人はいますか？ 浩太君、初めてですよね？ では浩太君、簡単な自己紹介をお願いします。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:03:41</div><div class="message">はじめまして、筑紫キャンパスのB4学生、小滝晴です。総合理工学府です。よろしくお願いします。李君も初めてですよね。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:04:25</div><div class="message">深層学習を用いた風洞実験に興味があるというのは、非常に面白いトピックですね。私たちはまだ知りませんでした。教授や先輩方から学ぶべきことがたくさんあります。はい、いいですね。李君は基本的に...</div></div>
+            <div class="transcript-item"><div class="timestamp">00:04:57</div><div class="message">日本語を使っていますが、彼が英語を話すのを聞くのは初めてです。しかし、日本語が分からない人もいるかもしれないので、基本的に会議は英語で行います。もう一人B4の学生がいますが、彼は最初からはここにはいません。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:05:30</div><div class="message">西山君です。彼を紹介してもらえますか？ 彼も私と同じ総合理工学の学生です。でも、今日は間違いでこの会議が1時に始まると考えています。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:06:01</div><div class="message">たぶん30分後に来ます。なので心配しないでください。その時、短いスピーチをしてもらいましょう。では、始めましょうか？ 皆さんこんにちは。今日は、RANSとLESによる建築バルコニーの風の流れと平均表面圧力のCFDシミュレーションについて説明します。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:06:37</div><div class="message">背景です。まず、CFDは主にRANSアプローチに基づいて、建築バルコニーの影響を調査するために広く使用されてきました。第二に、RANSは風上面の圧力を予測する上で良好な性能を示していますが、流れの剥離、再循環、再付着を正確に再現することには限界があり、背面の表面圧力係数の絶対値を過小評価する傾向があります。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:20:22</div><div class="message">（中略）結論として、0度では、最上階を除いて、両方のモデルは同様の局所および表面平均Cpを予測します。しかし、90度と180度では、RANSはLESと比較してCpの絶対値を著しく過小評価しています。RANSは一般に、強風のリスクを過小評価する可能性があるため、注意が必要です。</div></div>
+            <div class="transcript-item"><div class="timestamp">00:54:27</div><div class="message">このミーティングは以上です。ありがとうございました。次回は火曜日の午後に設定しましょう。</div></div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--muted); margin-top: 10px;">※トランスクリプトの一部を省略して表示しています。</p>
+        </div>
+      </section>
+
+      <section id="comment" class="card">
+        <div class="card-header">
+          <h2>コメント</h2>
+        </div>
+        <div class="card-body">
+          <div class="summary-content">
+2026.04.10 バルコニーがある建物の壁面風圧の計算精度に関する研究
+報告者: Masuda Kyoshiro
+
+LESの方が壁面風圧係数の再現性が高いということが強調されていましたが、これは周知の事実でもあります。実務の視点では、RANSがバルコニー内部の風速を過小評価し、強風リスクを見逃す可能性があるという指摘が重要であると感じました。プレゼンテーションは非常に整理されており、新入生にとっても良い導入となりました。
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>作成日: 2026年04月12日</p>
+    </footer>
+
+  </body>
+</html>

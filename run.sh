@@ -1,7 +1,8 @@
 #!/bin/bash
 
  # Gemini model
- MD=gemini-2.5-flash
+ #MD=gemini-2.5-flash
+ MD=gemini-2.5-flash-lite
  # log file
  LOG="gemini.log"
  ##for launchd 

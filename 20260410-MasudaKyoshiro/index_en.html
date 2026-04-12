@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meeting Summary: Searching for turbulence models by artificial neural network</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <style>
+      .transcript-container {
+        display: grid;
+        gap: 15px;
+      }
+      .transcript-item {
+        display: flex;
+        gap: 15px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .transcript-item:last-child {
+        border-bottom: none;
+      }
+      .timestamp {
+        font-family: var(--mono);
+        color: var(--muted);
+        min-width: 85px;
+        font-size: 0.85rem;
+        padding-top: 2px;
+      }
+      .message {
+        flex: 1;
+        font-size: 0.95rem;
+      }
+      .meeting-image {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: var(--shadow);
+      }
+      .summary-content {
+        white-space: pre-wrap;
+      }
+      .lang-switcher {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(246, 239, 228, 0.8);
+        backdrop-filter: blur(8px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="lang-switcher">
+      <a href="index.html">日本語</a>
+      <a href="index_en.html" class="current">English</a>
+      <a href="index_ch.html">中文</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Research Summary & Meeting Minutes</p>
+        <h1>Meeting Summary</h1>
+        <p class="lead">Research on searching for turbulence models by ANN and record of the meeting</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="info" class="card">
+        <div class="card-header">
+          <h2>Searching for turbulence models by artificial neural network</h2>
+        </div>
+        <div class="card-body">
+          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
+            <p style="margin: 0;"><strong>Authors:</strong> Masataka Gamahara, Yuji Hattori</p>
+            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
+              Masataka Gamahara: Graduate School of Information Sciences, Tohoku University; 
+              Yuji Hattori: Institute of Fluid Science, Tohoku University
+            </p>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 20px;">
+            <strong>DOI:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.2.054604" target="_blank" rel="noopener noreferrer">10.1103/PhysRevFluids.2.054604</a><br>
+            <strong>Journal:</strong> <em>PHYSICAL REVIEW FLUIDS</em>, Volume 2, Pages 054604-1 - 054604-20, Year 2017
+          </p>
+          <div class="note">
+            <p style="margin: 0;">
+              <strong>Abstract:</strong><br>
+              An artificial neural network (ANN) is tested as a tool for finding a new subgrid model of the subgrid-scale (SGS) stress in large-eddy simulation. An ANN is used to establish a functional relation between the grid-scale flow field and the SGS stress without any assumption of the form of function. Data required for training and test of the ANN are provided by direct numerical simulation of a turbulent channel flow. It is shown that an ANN can establish a model similar to the gradient model. The correlation coefficients between the real SGS stress and the output of the ANN are comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model. Large-eddy simulations using the trained ANN are also performed. Although ANN models show no advantage over the Smagorinsky model, the results confirm that the ANN is a promising tool for establishing a new subgrid model with further improvement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="points" class="card">
+        <div class="card-header">
+          <h2>Research Points</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>An artificial neural network (ANN) is proposed as a tool to establish a new subgrid-scale (SGS) model for large-eddy simulation (LES) of turbulence.</li>
+            <li>The ANN is trained and tested using data from direct numerical simulation (DNS) of turbulent channel flow to find a functional relationship between the grid-scale flow field and the SGS stress.</li>
+            <li>The performance of the ANN-based model is compared with existing models like the Smagorinsky model and the gradient model.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="findings" class="card">
+        <div class="card-header">
+          <h2>Main Findings</h2>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>The ANN is capable of creating a model similar to the gradient model, with high correlation coefficients between the predicted and actual SGS stress.</li>
+            <li>The ANN-based model shows correlation coefficients comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model.</li>
+            <li>While the a posteriori tests show that the ANN model has no significant advantage over the Smagorinsky model in predicting the mean flow, it demonstrates that ANNs are a promising approach for developing new turbulence models.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="conclusion" class="card">
+        <div class="card-header">
+          <h2>Conclusion</h2>
+        </div>
+        <div class="card-body">
+          <p>An ANN can successfully establish a functional relationship between the grid-scale flow field and the subgrid-scale (SGS) stress tensor in LES. The model created by the ANN is found to be similar to the gradient model and shows good correlation with DNS data, but does not offer a significant advantage over the conventional Smagorinsky model in a posteriori tests. The study concludes that using ANNs is a promising methodology for discovering new and improved turbulence models, although further improvements are needed.</p>
+        </div>
+      </section>
+
+      <section id="meeting" class="card">
+        <div class="card-header">
+          <h2>Meeting Points</h2>
+        </div>
+        <div class="card-body">
+          <img src="src/image.png" alt="Meeting Image" class="meeting-image" />
+          <div class="summary-content">
+04-10 Weekly Meeting: Comparison of Wind Tunnel and CFD for High-rise Building Balconies (RANS vs LES) - Summary
+Meeting Information
+Date: 2026-04-10 12:33:10
+Participants: [Speaker 1] [Speaker 2] [Speaker 3] [Speaker 4] [Speaker 5] [Speaker 6]
+
+Minutes
+- Introduction of new members and management policy:
+  - Welcomed students from Okinawa and Ariake; broadcasting via online/hybrid mode.
+  - Explanation for using English as the primary language in meetings.
+- Research presentation: Wind Tunnel vs. CFD Comparison (RANS vs. LES) for buildings with balconies.
+  - RANS is weak in reproducing separation and underestimating absolute leeward pressure.
+  - LES maintains high accuracy (MAD < 0.1) for all conditions and is consistently more accurate.
+  - RANS may underestimate strong wind risks in balcony environment assessments.
+- Technical Q&A:
+  - Discussion on LESIQ definition and RANS model validity (k-ε vs k-ω).
+- Management & Etiquette:
+  - Reminder on dress code (caps) for external presentations and work-hour management.
+          </div>
+        </div>
+      </section>
+
+      <section id="transcript" class="card">
+        <div class="card-header">
+          <h2>Discussion Transcript</h2>
+        </div>
+        <div class="card-body">
+          <div class="transcript-container">
+            <div class="transcript-item"><div class="timestamp">00:00:02</div><div class="message">Is it okay? Shall we do it? Oh, can I go down one? And have C go and take it. Did you recycle? C, go and take it. Ah, Ali-san, Ali is you? Are you logged in?</div></div>
+            <div class="transcript-item"><div class="timestamp">00:01:23</div><div class="message">Real staff on camera. Ah, if you speak up, it automatically focuses on yourself. So before that, let me give an announcement. This is the first time after newcomers joined our lab, and we have this weekly meeting every week.</div></div>
+            <div class="transcript-item"><div class="timestamp">00:06:01</div><div class="message">Maybe he comes in 30 minutes. So don't worry. At that time we force him to give a short speech maybe. Then shall we start? Hello everyone. Today, I will explain the CFD simulations of wind flow and the mean surface pressure for building balconies comprised of RANS and LES.</div></div>
+            <div class="transcript-item"><div class="timestamp">00:14:56</div><div class="message">(...) RANS shows a value that is approximately 35% lower at level 2 and 39% lower at level 9 compared to LES. These results suggest that even if surface pressure predictions are consistent, one must be cautious when using RANS for wind environment assessment within balconies, as it may underestimate the risk of strong winds.</div></div>
+            <div class="transcript-item"><div class="timestamp">00:54:27</div><div class="message">That's all for this meeting. Thank you very much. See you next Tuesday afternoon.</div></div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--muted); margin-top: 10px;">* Portions of the transcript have been omitted for brevity.</p>
+        </div>
+      </section>
+
+      <section id="comment" class="card">
+        <div class="card-header">
+          <h2>Comments</h2>
+        </div>
+        <div class="card-body">
+          <div class="summary-content">
+April 10, 2026: Study on calculation accuracy of surface wind pressure on buildings with balconies
+Reporter: Masuda Kyoshiro
+
+While it was emphasized that LES has higher reproducibility for surface wind pressure, it is a well-known fact. The observation that RANS underestimates wind speed in areas like the interior of balconies—which could lead to underestimating safety risks—was an important perspective. The presentation was well-organized and served as a good introduction for new students.
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>Created on: April 12, 2026</p>
+    </footer>
+
+  </body>
+</html>
