@@ -3,49 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Meeting Summary: Searching for turbulence models by artificial neural network</title>
-    <link rel="stylesheet" href="style/style.css" />
+    <title>Meeting Record: CFD simulations of wind flow and mean surface pressure for buildings with balconies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_rec.css" />
     <style>
-      .transcript-container {
-        display: grid;
-        gap: 15px;
+      .hero-meta, .meta-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+      .hero-meta { justify-content: center; margin-top: 18px; }
+      .hero-meta span, .meta-grid span {
+        display: inline-flex; align-items: center; padding: 6px 10px; border-radius: 999px;
+        background: rgba(255,253,248,.9); border: 1px solid var(--border); color: var(--muted);
+        font-family: var(--sans); font-size: .9rem;
       }
-      .transcript-item {
-        display: flex;
-        gap: 15px;
-        padding: 10px 0;
-        border-bottom: 1px solid var(--border);
-      }
-      .transcript-item:last-child {
-        border-bottom: none;
-      }
-      .timestamp {
-        font-family: var(--mono);
-        color: var(--muted);
-        min-width: 85px;
-        font-size: 0.85rem;
-        padding-top: 2px;
-      }
-      .message {
-        flex: 1;
-        font-size: 0.95rem;
-      }
-      .meeting-image {
-        width: 100%;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        box-shadow: var(--shadow);
-      }
-      .summary-content {
-        white-space: pre-wrap;
-      }
-      .lang-switcher {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(246, 239, 228, 0.8);
-        backdrop-filter: blur(8px);
-      }
+      .meta-grid span { border-radius: 12px; }
+      .section-label { font-family: var(--sans); font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+      .image-frame { background: #fff8ee; border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin-bottom: 18px; }
+      .image-frame img { display: block; width: 100%; height: auto; border-radius: 12px; }
+      .raw-block { white-space: pre-wrap; }
     </style>
   </head>
   <body>
@@ -57,136 +30,482 @@
 
     <header class="hero">
       <div class="hero-inner">
-        <p class="eyebrow">Research Summary & Meeting Minutes</p>
-        <h1>Meeting Summary</h1>
-        <p class="lead">Research on searching for turbulence models by ANN and record of the meeting</p>
+        <p class="eyebrow">Weekly Meeting Record</p>
+        <h1>CFD simulations of wind flow and mean surface pressure for buildings with balconies</h1>
+        <p class="lead">Comparison of RANS and LES, with full translated meeting notes, full transcript translation, and comments.</p>
+        <div class="hero-meta">
+          <span>Meeting on April 10, 2026</span>
+          <span>Paper Review</span>
+          <span>Wind Engineering / CFD</span>
+        </div>
       </div>
     </header>
 
     <main class="container">
-      <section id="info" class="card">
-        <div class="card-header">
-          <h2>Searching for turbulence models by artificial neural network</h2>
-        </div>
+      <section id="paper" class="card">
+        <div class="card-header"><h2>Paper Information</h2></div>
         <div class="card-body">
-          <div class="authors" style="font-size: 0.9rem; color: var(--muted); margin-bottom: 15px; padding-left: 10px; border-left: 3px solid var(--border);">
-            <p style="margin: 0;"><strong>Authors:</strong> Masataka Gamahara, Yuji Hattori</p>
-            <p style="margin: 5px 0 0;"><strong>Affiliation:</strong> 
-              Masataka Gamahara: Graduate School of Information Sciences, Tohoku University; 
-              Yuji Hattori: Institute of Fluid Science, Tohoku University
-            </p>
+          <p class="section-label">Paper Metadata</p>
+          <h3 style="margin: 0 0 8px; font-size: clamp(1.4rem, 2.8vw, 2rem);">CFD simulations of wind flow and mean surface pressure for buildings with balconies: Comparison of RANS and LES</h3>
+          <div class="meta-grid">
+            <span><strong>Authors:</strong> X. Zheng, H. Montazeri, B. Blocken</span>
+            <span><strong>Affiliation:</strong> Department of the Built Environment, Eindhoven University of Technology / Department of Civil Engineering, KU Leuven</span>
+            <span><strong>DOI:</strong> <a href="https://doi.org/10.1016/j.buildenv.2020.106747" target="_blank" rel="noopener noreferrer">10.1016/j.buildenv.2020.106747</a></span>
+            <span><strong>Journal Name:</strong> Building and Environment</span>
+            <span><strong>Volume:</strong> 173</span>
+            <span><strong>Pages:</strong> 106747</span>
+            <span><strong>Year:</strong> 2020</span>
           </div>
-          <p style="font-size: 0.9rem; margin-bottom: 20px;">
-            <strong>DOI:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.2.054604" target="_blank" rel="noopener noreferrer">10.1103/PhysRevFluids.2.054604</a><br>
-            <strong>Journal:</strong> <em>PHYSICAL REVIEW FLUIDS</em>, Volume 2, Pages 054604-1 - 054604-20, Year 2017
-          </p>
           <div class="note">
-            <p style="margin: 0;">
-              <strong>Abstract:</strong><br>
-              An artificial neural network (ANN) is tested as a tool for finding a new subgrid model of the subgrid-scale (SGS) stress in large-eddy simulation. An ANN is used to establish a functional relation between the grid-scale flow field and the SGS stress without any assumption of the form of function. Data required for training and test of the ANN are provided by direct numerical simulation of a turbulent channel flow. It is shown that an ANN can establish a model similar to the gradient model. The correlation coefficients between the real SGS stress and the output of the ANN are comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model. Large-eddy simulations using the trained ANN are also performed. Although ANN models show no advantage over the Smagorinsky model, the results confirm that the ANN is a promising tool for establishing a new subgrid model with further improvement.
-            </p>
+            <p><strong>Abstract</strong></p>
+            <p>Façade geometrical details can substantially influence the near-façade airflow patterns and pressures. This is especially the case for building balconies as their presence can lead to multiple separation and recirculation areas near the façades and hence large changes in surface pressure distribution. Computational fluid dynamics (CFD) has been widely used to investigate the impact of building balconies, mainly based on the steady Reynolds-averaged Navier-Stokes (RANS) approach. The objective of the present study is to evaluate the performance of steady RANS and large-eddy simulations (LES) in predicting the near-façade airflow patterns and mean surface pressure coefficients (Cp) for a building with balconies for three wind directions θ = 0°, 90°, 180°.</p>
           </div>
         </div>
       </section>
 
       <section id="points" class="card">
-        <div class="card-header">
-          <h2>Research Points</h2>
-        </div>
+        <div class="card-header"><h2>Research Highlights</h2></div>
         <div class="card-body">
           <ul>
-            <li>An artificial neural network (ANN) is proposed as a tool to establish a new subgrid-scale (SGS) model for large-eddy simulation (LES) of turbulence.</li>
-            <li>The ANN is trained and tested using data from direct numerical simulation (DNS) of turbulent channel flow to find a functional relationship between the grid-scale flow field and the SGS stress.</li>
-            <li>The performance of the ANN-based model is compared with existing models like the Smagorinsky model and the gradient model.</li>
+            <li>The study compares steady RANS and LES for near-façade airflow and mean surface pressure coefficients around a building with balconies under three wind directions.</li>
+            <li>Validation against wind-tunnel pressure data shows that both methods work reasonably well for the windward case, while LES is clearly more accurate for side and rear wind conditions.</li>
+            <li>RANS systematically underestimates pressure and wind speed inside balcony spaces, which can mislead ventilation and wind-environment design decisions.</li>
           </ul>
         </div>
       </section>
-      
+
       <section id="findings" class="card">
-        <div class="card-header">
-          <h2>Main Findings</h2>
-        </div>
+        <div class="card-header"><h2>Key Findings</h2></div>
         <div class="card-body">
           <ul>
-            <li>The ANN is capable of creating a model similar to the gradient model, with high correlation coefficients between the predicted and actual SGS stress.</li>
-            <li>The ANN-based model shows correlation coefficients comparable to or larger than similarity models, but smaller than a two-parameter dynamic mixed model.</li>
-            <li>While the a posteriori tests show that the ANN model has no significant advantage over the Smagorinsky model in predicting the mean flow, it demonstrates that ANNs are a promising approach for developing new turbulence models.</li>
+            <li>At θ = 0°, both RANS and LES reproduce façade Cp reasonably well, with LES showing slightly lower average absolute deviation.</li>
+            <li>At θ = 90° and 180°, LES reproduces experimental Cp distributions much better, while RANS strongly underestimates the absolute pressure level.</li>
+            <li>RANS also predicts lower average and peak wind-speed ratios in the balcony zones, which could hide actual discomfort or safety risk.</li>
           </ul>
         </div>
       </section>
 
       <section id="conclusion" class="card">
-        <div class="card-header">
-          <h2>Conclusion</h2>
-        </div>
+        <div class="card-header"><h2>Conclusion</h2></div>
         <div class="card-body">
-          <p>An ANN can successfully establish a functional relationship between the grid-scale flow field and the subgrid-scale (SGS) stress tensor in LES. The model created by the ANN is found to be similar to the gradient model and shows good correlation with DNS data, but does not offer a significant advantage over the conventional Smagorinsky model in a posteriori tests. The study concludes that using ANNs is a promising methodology for discovering new and improved turbulence models, although further improvements are needed.</p>
+          <p>LES shows consistently higher reliability than RANS for predicting façade pressure and near-façade airflow around balcony-equipped buildings. The gap is especially large for side and rear wind directions, where RANS systematically underestimates Cp and balcony wind speed. Relying only on RANS in design can therefore underestimate real ventilation and wind nuisance levels.</p>
+          <ul>
+            <li>LES remained the most stable and accurate method across all three wind directions.</li>
+            <li>RANS showed the largest weakness for θ = 90° and 180°.</li>
+            <li>Using only RANS for balcony wind-environment design can create practical underestimation risk.</li>
+          </ul>
         </div>
       </section>
 
       <section id="meeting" class="card">
-        <div class="card-header">
-          <h2>Meeting Points</h2>
-        </div>
+        <div class="card-header"><h2>Meeting Summary</h2></div>
         <div class="card-body">
-          <img src="src/image.png" alt="Meeting Image" class="meeting-image" />
-          <div class="summary-content">
-04-10 Weekly Meeting: Comparison of Wind Tunnel and CFD for High-rise Building Balconies (RANS vs LES) - Summary
-Meeting Information
+          <div class="image-frame"><img src="image.png" alt="Meeting summary visual" /></div>
+          <div class="note" style="margin-bottom: 18px;"><p>Below is the full translated meeting summary rather than an abridged version.</p></div>
+          <div class="raw-block">04-10 Weekly Meeting: Wind-tunnel and CFD comparison for a high-rise building with balconies (RANS vs LES), lab policy, and next schedule
+Meeting information
 Date: 2026-04-10 12:33:10
+Location: [insert location]
 Participants: [Speaker 1] [Speaker 2] [Speaker 3] [Speaker 4] [Speaker 5] [Speaker 6]
-
 Minutes
-- Introduction of new members and management policy:
-  - Welcomed students from Okinawa and Ariake; broadcasting via online/hybrid mode.
-  - Explanation for using English as the primary language in meetings.
-- Research presentation: Wind Tunnel vs. CFD Comparison (RANS vs. LES) for buildings with balconies.
-  - RANS is weak in reproducing separation and underestimating absolute leeward pressure.
-  - LES maintains high accuracy (MAD < 0.1) for all conditions and is consistently more accurate.
-  - RANS may underestimate strong wind risks in balcony environment assessments.
-- Technical Q&A:
-  - Discussion on LESIQ definition and RANS model validity (k-ε vs k-ω).
-- Management & Etiquette:
-  - Reminder on dress code (caps) for external presentations and work-hour management.
-          </div>
+- Introduction of new participants and operating policy
+  - From this academic year, students from Okinawa and Ariake technical colleges joined, so the meeting is broadcast in an online hybrid format.
+  - Explanation of the weekly meeting style: students present in rotation and share their screens on Zoom.
+  - Self-introductions from the new participants (engineering B4 students), together with an explanation of why the meeting is mainly conducted in English.
+  - A late participant (Nishiyama-kun), who misunderstood the start time, was expected to give a short speech later.
+- Research presentation: wind-tunnel and CFD comparison for a high-rise building with balconies (RANS vs LES)
+  - Background
+    - RANS predicts windward pressure fairly well, but is weaker for separation, recirculation, reattachment, and the absolute value of rear-face pressure.
+    - Systematic comparisons of RANS and LES for detailed facade geometry such as balconies are still limited.
+  - Experimental conditions
+    - Model: a 1/400 model of a 30-storey building, corresponding to a full-scale height of 120 m.
+    - Balcony dimensions: 4 m depth and 1 m parapet height at full scale.
+    - Measurement: pressure coefficient Cp along two vertical lines (A/B) on the facade.
+    - Surface roughness: z0 = 0.0001 m at model scale.
+    - Wind speed and turbulence: reference speed about 14 m/s at gradient height, turbulence intensity changing from 20% to about 7% with height.
+    - Wind directions: 0° / 90° / 180°.
+  - Numerical conditions
+    - RANS: Realizable k-epsilon, about 5.2 million cells. The results remained stable after mesh refinement, indicating grid independence.
+    - LES: about 19 million cells, directly resolving about 93% of total TKE according to the LESIQ index.
+    - LES used WALE; RANS used standard ANSYS Fluent model options.
+  - Results (accuracy indicators and trends)
+    - 0°: both RANS and LES showed practical accuracy with mean absolute deviation around 0.1, though local differences remained in the top-floor separation region.
+    - 90° and 180°: RANS errors worsened (up to about 0.302), while LES stayed below 0.1 under all conditions.
+    - Windward pressure distribution: area-averaged Cp was 0.507 for RANS and 0.511 for LES, a difference of 0.004.
+    - Balcony wind-speed ratio K (based on Uambient):
+      - Both methods showed the same pattern of stronger wind near the edge and weaker wind in the center.
+      - Absolute values were systematically lower in RANS. The area-averaged K was about 35% lower at level 2 and 39% lower at level 9.
+      - Kmax was also generally lower in RANS, with the largest difference at level 28.
+    - 90°: RANS could not reproduce the complex side-wind separation and recirculation well, and underestimated both Cp and velocity.
+    - 180°: area-averaged Cp differed by 0.106, with RANS lower; velocity at level 29 was underestimated by about 68%.
+  - Conclusion
+    - At 0°, local and area-averaged Cp were almost the same except near the top floor.
+    - At 90° and 180°, RANS underestimated the absolute value of Cp. In some 0° and 180° cases, K was underestimated by as much as 67.9%.
+    - RANS can underestimate strong-wind risk in balcony wind-environment assessment; LES was consistently more accurate.
+- Technical Q&amp;A and notes
+  - The main comparison targets were time-averaged quantities such as Cp and mean velocity; LES time-series data were not analysed.
+  - LESIQ (the directly resolved TKE ratio) and its calculation method were discussed, based on the empirical equation in the paper (Eq. 6), SGS viscosity, and velocity gradients.
+  - Model-selection validity was questioned: for RANS, comparisons with stronger near-wall models such as k-omega were suggested.
+  - Mesh and thin-structure representation were discussed, including the number of cells across parapet thickness and the possibility that LES sensitivity tests were not performed.
+  - The pressure taps for Cp were defined on the main building wall, not on the balcony floor.
+  - Cases where the experimental negative pressure magnitude was smaller than LES were mentioned, but no firm conclusion could be made because multiple sources of discrepancy are possible.
+- Requests regarding meeting operation, manners, and study habits
+  - Presenters and participants were asked to read papers in advance because talks often skip basic background.
+  - A reminder about presentation manners was shared, including caution about wearing caps in formal external settings.
+  - Members were encouraged to restore a regular work rhythm after the holiday period and manage their daytime work schedule properly.
+- Proposal for upcoming schedule
+  - Next group meeting: Tuesday afternoon at 1 pm.
+  - A progress-report meeting will also be held on the same day.
+  - Hybrid broadcasting will continue, and participants should join when possible.
+- Additional notices (classes, exercises, procedures)
+  - Two people will cooperate on B4 programming exercises involving web scraping and Excel handling.
+  - Spring semester: Monday second period (exercise). Summer semester: Friday third and fourth periods (experimental course).
+  - Extra safety and hygiene forms require signatures after explanation, including acknowledgement of laboratory equipment and machine-related hazards.
+Next actions
+- Set the next Tuesday 13:00 group meeting (hybrid Zoom/classroom format)
+- Hold the progress-report meeting on the same day
+- Have new participants read the relevant paper before the next meeting
+- Coordinate task sharing for the B4 exercise (web scraping / Excel)
+- Explain and sign the safety documents
+- Share reminders about presentation manners, including cap use in external presentations
+AI suggestions
+Points that were still vague in the meeting and should be clarified:
+1. Expand the RANS comparison range by explicitly planning comparisons with k-omega, RNG, Realizable, and similar models.
+2. Add LES mesh-sensitivity tests, including parapet-thickness representation and grid dependence of Kmax at each level.
+3. Document the exact LESIQ calculation process, including Eq. 6, ν, νsgs, and the temporal/spatial averaging method.
+4. Check consistency with the experimental data by comparing inflow profile, model details, tap positions, and uncertainty sources.
+5. Clarify the definition of K, the reference height for Uambient, and the connection to resident comfort and safety criteria.</div>
         </div>
       </section>
 
       <section id="transcript" class="card">
-        <div class="card-header">
-          <h2>Discussion Transcript</h2>
-        </div>
-        <div class="card-body">
-          <div class="transcript-container">
-            <div class="transcript-item"><div class="timestamp">00:00:02</div><div class="message">Is it okay? Shall we do it? Oh, can I go down one? And have C go and take it. Did you recycle? C, go and take it. Ah, Ali-san, Ali is you? Are you logged in?</div></div>
-            <div class="transcript-item"><div class="timestamp">00:01:23</div><div class="message">Real staff on camera. Ah, if you speak up, it automatically focuses on yourself. So before that, let me give an announcement. This is the first time after newcomers joined our lab, and we have this weekly meeting every week.</div></div>
-            <div class="transcript-item"><div class="timestamp">00:06:01</div><div class="message">Maybe he comes in 30 minutes. So don't worry. At that time we force him to give a short speech maybe. Then shall we start? Hello everyone. Today, I will explain the CFD simulations of wind flow and the mean surface pressure for building balconies comprised of RANS and LES.</div></div>
-            <div class="transcript-item"><div class="timestamp">00:14:56</div><div class="message">(...) RANS shows a value that is approximately 35% lower at level 2 and 39% lower at level 9 compared to LES. These results suggest that even if surface pressure predictions are consistent, one must be cautious when using RANS for wind environment assessment within balconies, as it may underestimate the risk of strong winds.</div></div>
-            <div class="transcript-item"><div class="timestamp">00:54:27</div><div class="message">That's all for this meeting. Thank you very much. See you next Tuesday afternoon.</div></div>
-          </div>
-          <p style="font-size: 0.8rem; color: var(--muted); margin-top: 10px;">* Portions of the transcript have been omitted for brevity.</p>
+        <div class="card-header"><h2>Discussion Transcript</h2></div>
+        <div class="card-body transcript">
+          <div class="note" style="margin-bottom: 18px;"><p>Below is the full English translation of the original transcript. Unclear speech remains unclear where the source audio was fragmented.</p></div>
+          <div class="raw-block">00:00:02
+Is it okay? Shall we start? Ah, can we go one lower? Please have C go and get it. Did you recycle it? C, go get it. Ah, Ari, is that you? Are you logged in?
+
+00:00:39
+Ah yes, yes, now. Is the coat there? Has it landed? It has, right? From the staff, from the staff. Okay, okay. Bruce, real staff.
+
+00:01:23
+The camera focuses automatically on whoever speaks. Before that, let me give an announcement. This is the first weekly meeting after the newcomers joined our lab, and we hold this meeting every week.
+
+00:01:55
+One student gives a report each time and we share our knowledge. Also, as some of you already know, from this year we welcomed technical-college students from different institutes, one from Okinawa and one from Ariake. One of them is not logged in yet, so we want to do this in an online hybrid style and broadcast it so they can join partially.
+
+00:02:33
+If you want to log in, it may be easier to look at the screen that way, and that is fine. When you give a presentation, please log in to the same Zoom room and share your screen there so they can see it. Before we start, it may be better for the newcomers to give brief self-introductions. Some of you do not know each other yet. Kota, this is your first time, right?
+
+00:03:09
+Kota, please introduce yourself. Nice to meet you, I am Kotaki Haru, a B4 student from Chikushi Campus, in interdisciplinary engineering. Nice to meet you all. Thank you very much. And you as well, this is your first time, right?
+
+00:03:41
+Hello everyone, nice to meet you all. My name is ... I am very interested in ...
+
+00:04:25
+Being interested in wind tunnels and deep learning is a very interesting topic. I know I have many things to learn from professors and senior members. Hi, okay, good, good. Rikun is basically ...
+
+00:04:57
+Usually he uses Japanese, so this is the first time to hear him speaking English. But some people may not understand Japanese, so basically the meeting is in English. There is another B4 student, but he is not here from the beginning.
+
+00:05:30
+He is Nishiyama-kun. Can you introduce him? He is an international engineering student like me. But today he misunderstood and thought the meeting would start at one o'clock.
+
+00:06:01
+Maybe he will come in thirty minutes, so do not worry. At that time we may force him to give a short speech. Then shall we start? Hello everyone. Today I will explain the CFD simulations of wind flow and mean surface pressure for building balconies, comparing RANS and LES.
+
+00:06:37
+This is the background. First, CFD has been widely used to investigate the impact of building balconies, mainly based on the RANS approach. Second, while RANS has shown good performance in predicting pressure on the windward facade, it is less accurate in reproducing flow separation, recirculation, and reattachment,
+
+00:07:08
+and it tends to underestimate the absolute value of the surface pressure coefficient on the rearward facade. To the best knowledge of the authors, the performance of RANS and LES for buildings with facade geometric detail has not yet been systematically investigated. Therefore, the focus of this study is to evaluate the performance of RANS and LES in predicting near-facade airflow patterns and safety for a building with balconies.
+
+00:07:48
+First, I will explain the wind-tunnel experiment model that serves as the basis for validation. This is a 1/400 model of an isolated 30-storey high-rise building, corresponding to a real height of 120 meters. For the balcony geometry, the full-scale dimensions were adopted: a depth of 4 meters and a parapet height of 1 meter.
+
+00:08:36
+Finally, regarding the measurement location, we used wind-pressure coefficient data from two vertical lines on the facade, line A and line B, to evaluate the CFD. By comparing the experimental and numerical values along each line, we performed a detailed evaluation of the balcony’s impact on the surrounding airflow and pressure distribution.
+
+00:09:11
+Do you know the meaning of parapet? Parapet. It means the wall height here, at the balcony edge. Usually it is about one meter in full scale. Next, the reproduced terrain had an aerodynamic roughness length z0 of 0.0001 meter at model scale. Regarding the mean wind-speed profile ...
+
+00:09:45
+The reference wind speed was set to approximately 14 meters per second at gradient height. The turbulence intensity ranged from 20 percent near the ground to about 7 percent at gradient height. Measurements were conducted for three wind directions: 0, 90, and 180 degrees.
+
+00:10:20
+For the RANS simulations, we used the Realizable k-epsilon model with approximately 5.2 million cells. As shown in Figure 4, the results remained consistent even with further mesh refinement, confirming that the grid resolution was sufficient and the solution was grid independent. On the other hand, LES used a high-resolution mesh of 19 million cells.
+
+00:10:55
+As demonstrated in Figure 5, the simulation directly resolved approximately 93 percent of the total turbulent kinetic energy. This allows the complex flow structure around the balcony to be captured at high resolution. Yes, so they performed both RANS and LES.
+
+00:11:30
+Next, please compare them. Looking at Table 2 for the zero-degree head-on wind case, both RANS and LES demonstrated practical accuracy with mean absolute deviation around 0.1. However, when the wind direction shifts to 90 or 180 degrees,
+
+00:12:02
+the accuracy of RANS decreases significantly, with the deviation increasing up to 0.302. In contrast, LES maintains very high accuracy with deviation below 0.1 under all conditions. Particularly in the 90-degree case, the NMSE is reduced to less than 0.1.
+
+00:12:37
+As shown in Figure 6, RANS tends to overestimate the pressure. Next, I will discuss the results. Figure 8a and 8b show the Cp distributions on the windward facades. As shown in these figures, both methods capture the strong suction occurring near the top floor.
+
+00:13:08
+The overall distribution pattern is similar. For the area-averaged value over the entire facade, RANS gave 0.507 and LES gave 0.511, representing a minimal difference of only 0.004. This suggests that RANS provided sufficient accuracy for determining the average pressure on the windward facade.
+
+00:13:40
+However, looking at the difference plot in Figure 8c, it is also clear that there is a difference in the region where flow separation occurs on the top floor. Next, this is the comparison of the wind-speed ratio K within the balcony areas.
+
+00:14:16
+As shown in Figure 9a and 9b, both methods share a common distribution pattern in which the wind is stronger at the edge and weaker at the center. However, there is a significant difference in absolute value. Using the LES result as a reference, RANS systematically underestimates the wind speed across all levels. When comparing the area-weighted average K, representing the average wind speed over the entire balcony,
+
+00:14:56
+RANS shows values about 35 percent lower at level 2 and 39 percent lower at level 9. These results suggest that even if surface-pressure predictions are consistent, care is needed when using RANS for balcony wind-environment assessment, because it may underestimate the risk of strong wind.
+
+00:15:33
+Looking at the figure, first of all the definition of K is very misleading, right? Although that is their definition, at the beginning I thought it meant kinetic energy, but it is just the wind-speed ratio. Then how is U-ambient defined? It is the reference velocity, right?
+
+00:16:04
+Where is the definition of U-ambient? Is it defined at some height above the ground floor? What does one meter from the bottom mean? If the value is on the order of one, does that mean the wind speed in the balcony is almost the same order as the wind speed at that reference level?
+
+00:16:37
+Reasonable. Looking at Figure 10, the incoming wind strikes the building and divides upward and downward. At level 19 a stagnation point forms, and within the balcony space a recirculation region appears, as shown in the vector field. RANS underestimates the mean velocity inside these balconies compared to LES.
+
+00:17:12
+As shown in Figure 11, RANS predicts substantially lower Kmax across all levels, with the maximum difference occurring at level 28. These results suggest that assessments based on RANS may overlook wind discomfort and safety hazards for residents. This is the result for the 90-degree case.
+
+00:17:50
+Regarding the surface pressure Cp distribution in Figure 12, while LES shows negative-pressure regions across the entire facade, RANS significantly underestimates them. In terms of velocity, RANS predicts much lower wind speed across all levels than LES. This indicates that RANS cannot adequately capture the complex separation and recirculation that occur when the wind blows laterally through the balconies.
+
+00:18:37
+This is the result for the 180-degree case. First, regarding surface pressure Cp in Figure 14, RANS underestimates Cp across the entire facade. In particular, the surface-averaged value reveals a difference of 0.106 between RANS and LES. Next, looking at Figure 15, it is clear that RANS underestimates ...
+
+00:19:08
+the wind speed across almost all levels. A particularly significant underestimation of approximately 68 percent was observed at level 29 compared to LES. Finally, in Figure 6, except for some lower floors, RANS consistently predicts lower Kmax values. In conclusion, at 0 degrees both models predict similar ...
+
+00:19:44
+local and surface-averaged Cp except at the top floor. However, at 90 and 180 degrees, RANS underestimates the absolute value of Cp compared to LES. The height-wise wind-speed ratio K is also generally underestimated, reaching up to 67.9 percent in some 0-degree and 180-degree cases.
+
+00:20:22
+For 0 and 90 degrees, RANS gives inconsistent results, overestimating K in some regions and underestimating it in others. Finally, Kmax is underestimated at 0 and 90 degrees, while for 180 degrees RANS predicts a higher Kmax only at the lowest level.
+
+00:20:55
+In other words, at most levels the value is lower than LES. Thank you very much. At least I understand that they are comparing RANS and LES, and their conclusion is that LES is better than RANS. But beyond that, what was the main purpose of their simulation? Estimating pressure with RANS is a major issue in this field, so please supplement that point.
+
+00:21:32
+Airflow pattern, yes. That is mainly it. RANS and LES are totally different, right? RANS cannot predict temporal development and velocity fluctuations in the same way. But what they are interested in here is accuracy only, correct?
+
+00:22:03
+In terms of the turbulence model, LES solves the temporal development, but what they compare here are only time-averaged quantities or statistics. LES can show time-series data, but they are not used in the analysis. They compare Cp and mean velocity around the building and the balcony. Do you understand?
+
+00:22:36
+At this point it almost feels like a waste of money. Anyway, this paper comes from Blocken’s group when he was still in Eindhoven. He has already moved to another university. The last time I visited that university, I could not meet him.
+
+00:23:08
+I am not sure about the details. Was he a postdoc or a professor? Ah, professor. Okay, next question please.
+
+00:23:52
+They said 93 percent was captured. How did they measure that? I know Masuda-kun cannot answer immediately. Do you know the meaning of LESIQ?
+
+00:24:26
+LESIQ, no ... TKE, SGS, SGS-TKE. It refers to small-scale TKE. But do you know what SGS means?
+
+00:24:59
+SGS means subgrid scale. There is the velocity u, and the turbulent kinetic energy can be split into the directly resolved part and the remaining part.
+
+00:25:35
+One part is calculated directly from the simulation result, but the other part is not directly from the simulation output and has to be modelled.
+
+00:26:07
+The question is how to obtain that, and the index shows the ratio between those parts. If you do not know, Tom can answer. Tom, please explain how we can get the LESIQ value.
+
+00:26:38
+Yes, they have the equation. LESIQ index, right? According to Equation 6, it is evaluated using the resolved kinetic energy, the total kinetic energy, and also the viscosity terms.
+
+00:27:14
+More precisely, this includes the mean part, so we have to take time averaging. There is a spatial part and a temporal part. Then we compute the usual turbulent kinetic energy, 0.5 ui'ui'.
+
+00:27:50
+And then there is another term they call k-bottom. According to the equation, that ratio is estimated using the kinematic viscosity nu and the SGS kinematic viscosity.
+
+00:28:44
+The SGS kinematic viscosity is based on the local velocity gradient. In this case it is estimated by an empirical formula, and I think it is based on a Smagorinsky-type modelling idea. Then the ratio can be obtained.
+
+00:29:29
+So basically the number is estimated, not something computed completely directly from first principles. Another index refers instead to mesh dependence. Those are different things.
+
+00:30:15
+It is like a balcony, you know. This one, this one. Yes, it looks like that. It feels like we are standing there.
+
+00:31:10
+Was it called a room? Something very small is visible, but it got cut off again. It is Figure 3, Figure 3.
+
+00:31:42
+Can’t you show that? The paper, the paper. Figure 3. C and G, yes.
+
+00:32:35
+We can count it. What is the thickness of this structure? I do not mean the mesh thickness, I mean the thickness of the balcony itself. If one mesh is the minimum, maybe 4 meters? 4 meters? Why? That is too large.
+
+00:33:06
+No, I mean the wall thickness of the balcony structure. The question is how many mesh cells exist across that very thin balcony structure. The balcony is like an empty box. How did they resolve the thin layer? We want to know the actual thickness and how many cells span it.
+
+00:34:05
+Parapet walls means the parapet height, right? Maybe two meters in full scale, and the balcony depth is four meters. They changed the height from the figure, but they did not do any sensitivity test for the mesh, right?
+
+00:34:42
+Especially not for the LES case, yes.
+
+00:35:24
+If LES gives better results, why did the authors not use a stronger RANS model, for example k-omega? If the wall-region issue is important, does that mean the comparison is unfair?
+
+00:35:59
+I understand that question. There are different RANS models, of course. LES here uses a very good wall-adaptive model, whereas the RANS side uses a rather simple classical k-type model.
+
+00:36:33
+So it is a comparison between a very strong LES model and a rather conventional historical RANS model. In that sense, the comparison may be too primitive on the RANS side.
+
+00:37:16
+I think that is a good point. For me, comparisons between LES and RANS are often unfair, because LES almost always performs better. If they had chosen more RANS models, it could have been a more reasonable comparison. In your simulations, you compared RNG and standard k-epsilon too, right?
+
+00:37:47
+Yes, RNG k-epsilon, standard k-epsilon, and Realizable k-epsilon. Those are common choices. Since they are using ANSYS Fluent, they could test many models.
+
+00:38:18
+We can test them many times. What kinds of models are included in ANSYS? For the LES case they use the WALE model, right? But besides that, what other models are there? And how much variation is there on the RANS side?
+
+00:38:58
+It may depend on the simulation target, but perhaps k-omega type models should also be considered. I am not sure what was implemented in their setup.
+
+00:40:08
+About Figure 6 and similar plots: from other wind directions, due to the balcony geometry, one would expect more fluctuating behaviour.
+
+00:40:41
+But in panel d the variation looks smooth. Maybe that is because the balconies are always present, or because this is the 90-degree parallel-wind case. It may depend on wind direction.
+
+00:41:35
+How did they define the pressure coefficient when this kind of structure exists? In the side view of figures C and D there are these small structures. When we say pressure coefficient on the surface, what surface exactly do we mean?
+
+00:42:08
+It means the pressure on the main building wall. If the balcony floor were included, the surface would not be treated in the same way, so normally the pressure coefficient is defined on the building wall, not on the balcony floor.
+
+00:42:43
+So the pressure tap is here on the building wall. Ah, I see. I had thought it was defined over the balcony surface in the program, but now I understand.
+
+00:43:14
+Any other questions? Yes, one. Which part? Which case? All of them?
+
+00:43:45
+Do you mean A and B? Yes, A and B. There are simulations all the time, but why do you say that?
+
+00:44:49
+You said the experimental results are always lower? Not always lower. Ah, okay, I misunderstood. For A and B the agreement is better. Okay, I understand.
+
+00:45:20
+For C and D the values are small. The experimental values are smaller than LES. But why do we see such small values there?
+
+00:45:51
+For C and D, that is not simply a smaller value but a negative value. It is about suction, so the issue is that the experimental data have larger negative pressure in absolute magnitude.
+
+00:46:26
+Stronger suction means a larger absolute value; it is not just “smaller” because it is negative.
+
+00:47:06
+As you can see in the figure, it depends on the position. At A and B the experiment is slightly smaller, but they are mostly consistent and it may fall within experimental error.
+
+00:47:38
+At least for C and D, the negative-pressure side shows a difference, and LES appears smaller in absolute magnitude there.
+
+00:48:09
+What is the source of the experimental data? Did they do the experiment themselves, or are they referring to another experimental paper? I think they also published that experiment elsewhere, so it may be from a different paper, not this work itself.
+
+00:49:49
+The airflow around the building is very complex and difficult in the experiment. We do not have the full experimental data source in front of us, so it is hard to say much more.
+
+00:50:30
+At this moment it is impossible to identify the reason. There are many possibilities: the inflow condition may be different, the detailed structure of the building may be different, and even the vertical profile may not be exactly the same as in the experiment.
+
+00:51:09
+It is a difficult question to answer. Anything else? Everything okay? Lee, do you have anything? Kotaki, anything? Even an easy question is fine.
+
+00:51:39
+I still have only a little knowledge, so I do not have any question right now. Before that, though, please introduce yourself, because we do not know who you are.
+
+00:52:11
+I misunderstood the starting time, so I am sorry. Okay, that is fine. Thank you very much.
+
+00:52:42
+Lee-kun, Mishima-kun, Kotaki-kun: if you do not have questions, please at least prepare by reading the paper in advance so that you can follow the talk. Masuda-kun is an M2 student, and most of the others are PhD students, so they often skip very fundamental parts.
+
+00:53:13
+And one more thing, actually two things. I personally do not care much, but I heard that some professors do not like presenters wearing caps. In this internal meeting it really does not matter, but please be careful in classes or formal presentations.
+
+00:53:45
+Another thing: the new academic year has already started, and some of you still look very relaxed, as if you are still on a long holiday. Please gradually restore your daily routine and concentrate on your work. Think carefully about how you spend your time from morning to evening.
+
+00:54:27
+That is all for this meeting. Who is the next presenter? He said he still has work and may need another week or two.
+
+00:55:31
+Thank you for watching.
+
+00:56:10
+Monday and Thursday. How about Lee? So Tuesday is not available?
+
+00:56:51
+What should we do about Tuesday? Tuesday could be okay, right? Tuesday afternoon? It is very quick, just two days away, but is it okay?
+
+00:57:21
+Okay, then let us make it 1 pm. Shall we put all the meetings on the same day, every Tuesday afternoon? Let us also hold the progress report on that day.
+
+00:57:52
+The progress-report meeting will also be on the same day, after the group meeting. Okay, let us finish. Three people please remain for a technical matter.
+
+00:58:24
+Wait, can I say this once? Can Sunaba-san and Toma-san hear me? We will broadcast from here again next Tuesday in this style, so please join if it is convenient. Okay, let us do that.
+
+00:58:54
+Okay, that is all for today. Thank you. Sorry. About helping with the B4 programming exercise, right? So will two people discuss it and basically handle it together?
+
+00:59:27
+And did I mention the experimental subject too? There are contents here that are like learning how to use Excel, so that should also be manageable. There is also the role of helping create a good atmosphere, but that is in the summer semester.
+
+00:59:59
+So the spring-semester exercise is in the second period on Monday, and the summer-semester experiment is probably in the third and fourth periods on Friday. If both of you can use your time for it, I will submit your names.
+
+01:00:29
+It may be easier if two people do it rather than one person alone. If it becomes too much, you can divide the work, or even let one person handle it. The task is something like web scraping, code that obtains data from web pages.
+
+01:01:00
+So the atmosphere is basically to ask, “How far have you got?” and follow the progress. Okay, let’s start. Also, three of you need to write your names on this. For two of you, this is your first time, right?
+
+01:01:36
+D-kun, please introduce yourself a little. You will be a senior to these two because you are in the master’s course. D-kun, the two of them are working on programming exercises.
+
+01:02:06
+Lee-kun, you took my class today, right? You are busy because you have many classes, right? Okay, then let us proceed with that for a while. Also, now we have extra documents for the safety and hygiene training.
+
+01:02:43
+You need to sign those documents. The plan is to have you sign after the explanation. Your research theme has not yet been decided, so we do not know exactly what you will do, but this is a confirmation that the laboratory has informed you about dangerous items and machine tools in the lab.</div>
         </div>
       </section>
 
       <section id="comment" class="card">
-        <div class="card-header">
-          <h2>Comments</h2>
-        </div>
+        <div class="card-header"><h2>Comment</h2></div>
         <div class="card-body">
-          <div class="summary-content">
-April 10, 2026: Study on calculation accuracy of surface wind pressure on buildings with balconies
-Reporter: Masuda Kyoshiro
+          <div class="raw-block">2026.04.10 Research on the computational accuracy of wall pressure around a building with balconies
 
-While it was emphasized that LES has higher reproducibility for surface wind pressure, it is a well-known fact. The observation that RANS underestimates wind speed in areas like the interior of balconies—which could lead to underestimating safety risks—was an important perspective. The presentation was well-organized and served as a good introduction for new students.
-          </div>
+Presenter: Masuda Kyoshiro
+This paper discussed the reproducibility of wall-pressure coefficients around a high-rise building with balconies, comparing RANS and LES against wind-tunnel data. The central message was that LES reproduces pressure more accurately because it can better represent the fine balcony geometry. That emphasis did not feel especially essential, because it is already widely known that LES generally performs better than RANS in this type of calculation, a point also raised in the discussion. Still, since the paper was published in 2020, the amount of comparable data may have been smaller at that time.
+
+The presentation itself was well organized and easy to follow. The speaker seemed to understand the material well, and it worked effectively as a first meeting presentation for the newly joined students.
+
+Interesting / notable points
+- It is already a well-known fact that LES tends to outperform RANS in reproduction accuracy, so emphasizing only that point may not be the most essential contribution.
+- The underestimation of balcony interior wind speed by RANS is practically important, because it may lead to underestimation of safety issues in balcony wind-environment assessment.</div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
       <p>Created on: April 12, 2026</p>
     </footer>
-
   </body>
 </html>

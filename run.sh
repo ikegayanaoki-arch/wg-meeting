@@ -1,8 +1,8 @@
 #!/bin/bash
 
  # Gemini model
- #MD=gemini-2.5-flash
- MD=gemini-2.5-flash-lite
+ MD=gemini-2.5-flash
+ #MD=gemini-2.5-flash-lite
  # log file
  LOG="gemini.log"
  ##for launchd 
@@ -17,7 +17,7 @@
    echo $DN
  
    case "$DN" in
-     index*|form|_bk)
+     index*|form*|_bk)
        echo "  ***  Skipping $DN"
        ;;
      *)

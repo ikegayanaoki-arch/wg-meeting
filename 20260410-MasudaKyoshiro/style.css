@@ -112,30 +112,6 @@ h1 {
   gap: 24px;
 }
 
-.toc {
-  background: #fff8ee;
-  border: 1px dashed #e1d0b9;
-  border-radius: 18px;
-  padding: 20px 24px;
-}
-
-.toc-title {
-  font-family: var(--sans);
-  font-weight: 600;
-  color: var(--accent-ink);
-  margin: 0 0 10px;
-}
-
-.toc ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 8px;
-}
-
-
-
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
@@ -271,4 +247,3 @@ pre code {
   white-space: nowrap;
   min-width: 70px; /* Adjust as needed */
 }
-
